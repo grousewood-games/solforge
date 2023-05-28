@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <script src="dist/solforge.js" type="module"></script>
+        <title>Solforge - Mimicwurm Edition</title>
+        <style>
+            @font-face {
+                font-family: cinzel;
+                src: url('font/Cinzel-Regular.ttf');
+            }
+
+            body {
+                
+                margin: 0px 0px;
+                background-color: black;
+            }
+
+            #flex {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+
+            .hide {
+                visibility: hidden;
+            }
+
+            #solforge {
+                width: 1024px;
+                height: 768px;
+                flex-basis: auto;
+                min-width: 1024px;
+            }
+
+            canvas, img { position: absolute; }
+            #card { z-index: 8; }
+            #decklist { z-index: 7; }
+            #effects { z-index: 6; }
+            #hand { z-index: 5; }
+            #player { z-index: 4; }
+            #field { z-index: 3; }
+            #game-ui { z-index: 2; }
+            #playmat { z-index: 1; }
+
+            #log {
+                border: 1px blue;
+                flex-grow: 1;
+                color: azure;
+                height: 768px;
+                overflow-y: scroll;
+                font-family: 'cinzel';
+                font-size: larger;
+            }
+            li {
+                list-style: none;
+            }
+
+            .green {
+                color:lime
+            }
+            .red {
+                color:crimson
+            }
+            .all {
+                color: lightsteelblue;
+            }
+            .nek {
+                color: orchid;
+            }
+            .tem {
+                color: orangered;
+            }
+            .ute{
+                color: forestgreen;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="flex">
+            <div id="solforge">
+                <!-- See z-index css above for ordering  -->
+                <canvas id="card" width="1024" height="768"></canvas>
+                <canvas id="decklist" width="1024" height="768"></canvas>
+                <canvas id="effects" width="1024" height="768"></canvas>
+                <canvas id="hand" width="1024" height="768"></canvas>
+                <canvas id="player" width="1024" height="768"></canvas>
+                <canvas id="field" width="1024" height="768"></canvas>
+                <canvas id="game-ui" width="1024" height="768"></canvas>
+                <img id="playmat" src="img/background/playfield-uterra.jpg" class="hide"></img>
+                <img id="mainmenu" src="img/background/leash.jpg"></img>
+                <img id="blueface" src="img/background/blueface.jpg"  class="hide"></img>
+            </div>
+            <div id="log">
+                <ul id="loglist">
+                </ul>
+            </div>
+        </div>
+        <audio id="dogbark" src="sound/asthma-dog.mp3" volume="0.5"></audio>
+        <input type="file" id="fileupload" accept=".txt" style="display: none" />
+    </body>
+</html>
