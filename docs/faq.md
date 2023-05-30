@@ -70,7 +70,9 @@ Perhaps when I am "finished". Right now only the minified build will be public, 
 
 ### Will You Implement Online Play?
 
-Unlikely. Originally I focused on single player as I did not have permission to make this public (July 2022). When it was revealed that this type of thing would be allowed (April 2023), it became an option. I had some hesitation due to the effort level and the likely scenario that [nobody would play it for long](https://www.reddit.com/r/SolForge/comments/tiv839/what_would_it_take_to_get_you_to_play/). Shortly after (May 2023), Kaelari [announced](https://www.reddit.com/r/SolForge/comments/13c7ahd/kaelforge_a_solforge_revival_attempt/) he was ressurecting his own effort. He is the people's champion of Solforge (a title well earned through colossal efforts over years; I enjoyed many a tourny on `solforgeladder.com`), and his server kung-fu is better than mine. Competing with him seems a questionable time investment; there are a number of other projects I'm itching to get to. If he aborts his initiative, then I'll re-evaluate things.
+Unlikely. Originally I focused on single player as I did not have permission to make this public (July 2022). When it was revealed that this type of thing would be allowed (April 2023), it became an option. I had some hesitation due to the effort level and the likely scenario that [nobody would play it for long](https://www.reddit.com/r/SolForge/comments/tiv839/what_would_it_take_to_get_you_to_play/). Shortly after (May 2023), Kaelari announced he was ressurecting his own effort. He is the people's champion of Solforge (a title well earned through colossal efforts over years; I enjoyed many a tourny on `solforgeladder.com`), and his server kung-fu is better than mine. Competing with him seems a questionable time investment; there are a number of other projects I'm itching to get to.
+
+Here is a post containing links to play the current version of [KaelForge](https://www.reddit.com/r/SolForge/comments/13uukrm/kaelforge_set_1_and_15_done_you_can_play_solforge/).
 
 ### Does This Work On A Touchscreen Tablet?
 
@@ -102,7 +104,7 @@ Reports of incorrect text/stats on cards (or cards not doing what they are suppo
 
 You can. I make no promises that it will get get done, but no harm in asking.  Please review this FAQ and the [issue log](https://github.com/grousewood-games/solforge/issues) first as it may already be addressed. Give a :+1: reaction to existing entries you want. Otherwise feel free to [open a new discussion](https://github.com/grousewood-games/solforge/discussions), or message me about it if you don't have a Github account (see the [Contact](https://github.com/grousewood-games#contact) page).
 
-### Do You Plan To Add More Cards
+### Do You Plan To Add More Cards?
 
 Yes! Would like to get them all implemented. Set 3 should happen for sure, barring any disasters. Shortcomings of the UI will likely be prioritized first (some Set 3 cards also require a discard picker which needs to be built).
 
@@ -122,11 +124,11 @@ Certain mechanics found in the original game have been slightly changed for my o
 
 - `Lvl3 Lyria, Muse of Varna` now places creatures all at once, not in sequence.
   - An example: if Lyria brought back four `Lvl1 Spring Dryads`, in the original game you would end up with a 4/4, 5/5, 6/6, and 7/7 set of Dryads. In this edition, you will end up with four 7/7 Dryads.
-- Batch resolution is not randomized. The actual order is likely too convoluted to describe here, but it is deterministic.
+- Batch resolution is not randomized.
   - An example: a 5/5 `Lvl1 Spring Dryad` is on board, `Lvl2 Weirwood Patriarch` is forged.
   - In the original game, the effect that triggered first was random. You could end up with a 6/6 Dryad or a 9/9 Dryad.
-  - In this version, the order will be the same if the initial conditions are the same. When I run out of real work I might attempt to distill the algo into something understandable.
-  - For the real keeners, the order likely depends on both creature position relative to each other, and which event gets generated first. In this case there is one event (Creature Enters), so Dryad to the left of WWP is _probably_ 6/6, to the right is _probably_ 9/9.
+  - In this version, the order will be the same if the initial conditions are the same.
+  - For the real keeners, actual order somewhat explained [here](rules.md#trigger-resultion-order). In this case there is one event we care about (Creature Enters), and Dryad had to exist first. Thus Dryad will always trigger second, resulting in a 9/9.
 - `Brightsteel Gargoyle` does not change image when in defender mode. The amount of trickery to make this one card act fancy is currently in the "not worth it" pile.
 - When playing `Metasight`, once a first card is selected for leveling, it is leveled. You cannot cancel back and re-pick as you can in most multi-select operations.
 - There is currently no "sudden death" mode. If you both die and have the same health in death, you both win :trophy:.

@@ -2,13 +2,13 @@
 
 A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wiki/SolForge).
 
-- [Play the game](https://grousewood-games.github.io/solforge/play/)
-- Read the [Rules](docs/rules.md)
+- [Play the Game](https://grousewood-games.github.io/solforge/play/)
+- [How to Play](docs/rules.md)
 - Additional [Info and FAQ](docs/faq.md)
 
 ## Current Release
 
-### (Forge Guardian) Beta `v0.1.0`
+### (Forge Guardian) Beta `v0.1.1`
 
 - All cards in Sets 1 & 2 freely available.
 - Constructed and Draft modes.

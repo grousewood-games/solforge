@@ -283,6 +283,8 @@ Dinosaurs, druids, forest creatures, and very angry plants.
 
 ## Advanced Event Timing
 
+None of the following is required to enjoy the game. However understanding the advanced quirks can help you determine if a certain actions will play out in the order you expect.
+
 ### Typicial Events
 
 - Creatures entering the field, being replaced, being destroyed, or moving.
@@ -318,3 +320,17 @@ During battle, the activities are split into three batches. Death is checked at 
 3. A batch to process any death related events from the battle. Again, they apply even if the creature has been dead since the first batch. E.g. `Graveborn Glutton` killed in combat will perform its Vengeance damage in this batch.
 
 Any new and unhandled events raised in the second and third batches are processed in a fourth batch, which is a normal batch.
+
+### Trigger Resultion Order
+
+The order in which triggers resolve is deterministic, but can be difficult for a person to track in more complex scenarios.
+
+The primary determining factor is the order in which events entered the batch. This is not obvious since non-interactive and combo'd things happen in order dicated by the code. In our `Dreadbolt` example above, it is not clear which event is generated first (spoiler, it's the Creature Destroyed event). For spells, the Card Played event is typically last, and forging creatures the Card Played event is usually first. But there are many other permutations that I won't list out.
+
+The secondary factor is the order creatures appeared on the board. On the same event, triggers on a newer creature will be processed before an older creature. Again, this can be difficult to track in cases with multiple Spawns.
+
+The third factor is the order a creature gains triggers. This can matter when a creature has two triggers that react to the same event. As an example, if `Spiritflame Mystic` has `Shallow Grave` casted on it, and then dies later in the turn, will the resurrected Mystic get hit with the original Mystic's `Vengeance` effect? Triggers are also processed in a newest-first order, so in this case, yes. The Vengeance trigger was assigned at creature creation, the Shallow Grave was assigned on a later play.
+
+Remember the three batch piles triggers fall into will also influence the order in which things occur.
+
+The main takeaway is if encountering similar board state, the trigger resolution should be the same. Basic interactions can be predicted, complex cascades of triggers not so much.
