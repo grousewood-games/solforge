@@ -7,7 +7,7 @@
 - [Feature Requests and Problems](#feature-requests-and-problems)
 - [Game Details](#game-details)
 
-### Credits
+## Credits
 
 All game rules, card art, card names & text, dog bark battle sound, and the vast majority of the UI art assets is the creation and intellectual property of [Stoneblade Entertainment](https://stoneblade.com/). I am greatful of their [permissiveness](https://www.reddit.com/r/SolForge/comments/134os4h/a_call_to_codersenthusiastsanybody_really/) in letting me share this free tribute to the original game.
 
@@ -15,7 +15,9 @@ The fancy font, `Cinzel`, was created by [Natanael Gama](https://fonts.adobe.com
 
 The orange scroller arrow icons were made by [Programmer16](https://opengameart.org/content/simple-orange-pixel-art-ui).
 
-A thank you to whomever wrote and published the "Advanced Solforge Rules" back in the day (Pion? Piquadore?). It has been an indispensable guide in my attempts to recreate the game as accurately as possible.
+A thank you to `Ximane` who wrote and published the "[Advanced Solforge Rules](https://solforge.fandom.com/wiki/Advanced_Rules)" back in the day. It has been an indispensable guide in my attempts to recreate the game as accurately as possible.
+
+Much respect to [Kaelari](#will-you-implement-online-play) for his generous sharing of some original game assets.
 
 All coding done by me, your friendly neighbourhood grouse. Hat tip to the implementers of the [CanvasAPI](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), [Github](https://github.com) for the free hosting, and [Photopea](https://www.photopea.com/) for the image editing trickery.
 
@@ -154,16 +156,12 @@ Certain mechanics found in the original game have been slightly changed for my o
 
 I only captured a subset of information and assets back when the game was live. If you have any of the following and want to donate to help make the game better, please [get in touch](https://github.com/grousewood-games#contact)
 
-- The original Alloyin, Nekrium, Tempys, and vanilla playmat images.
-- Effect sprite sheets (death animation, animations for the four faction effects).
-- Effect sounds (would play when the above sprites animate).
-- Turn count progress sprite (the green stuff in an arc that advanced around the player portrait).
 - Draft Pool lists of various eras.
 - Deck Lists.
   - Various Tournaments (top X decks).
   - ZubjectX's Gimmick Decks (not on [YouTube](https://www.youtube.com/@ZubjectX/about) anymore).
   - Zan's Crazy Deck Shop (was on the original forums).
-- High quality images of certain card art from Set 7 (the typical size is 820x820 pixel).
+- High quality images of certain card art from Set 7 (I have ok versions, the typical original size is 820x820 pixel).
   - `Anvilbreaker`, `Automation Prime`, `Bulwark Battalion`, `G.S.F. Commando`, `Guardians Assemble`, `Ironbeard, Ascendant`, `Metadata Redactor`, `Ordinance Captain`, `Stasis Indexer`, `Steelspark Tinkerer`, `Tower Cannoneer`, `Voltaic Prophet`
   - `Avarice, the Insatiable`, `Bride of Frankenbaum`, `Ceaseless Grimgaunt`, `Cercee's Call`, `Cyrus the Merciless`, `Disciple of Vyric`, `Ebonskull Diabolist`, `Indomitable Fiend`, `Lichmane Dragon`, `Murdurous Necromancer`, `Rite of Undeath`, `Scourge Knights`, `Undying Legacy`
   - `Blazing Hostility`, `Blitzmane, the Destroyer`, `Cauldron Mystic`, `Chaos Twister`, `Cyclone Rider`, `Dragonkeeper Shaman`, `Fit of Rage`, `Iceshard Berserker`, `Lightning Tamer`, `Magmify`, `Ritual of Elements`, `Slumbering Shrine`, `Stampeding Mongosaur`, `Unstable Asir`, `Uranti Stormshaper`, `Warhound Courser`, `Warhound Raider`
