@@ -44,7 +44,9 @@ The primary goal of the game is to reduce your opponent's health to 0 (or below)
 
 Available choices will be highlighted in green rectangles, or be presented on the red button in the middle-right of the board. Left click your mouse over what your heart desires. A red rectangle indicates you can Cancel the current action.
 
-Any card can be right clicked to view the details, including card text and all the card levels. Click anywhere on this view to dismiss it. On a touch screen, double-tap the card to see the details. The threshold for a double tap is half a second. Given the trickery required to detect this, you may notice single taps have a slight delay before the app reacts to it.
+Any card can be right clicked to view the details -- the card text and all levels for the card. Click anywhere on this view to dismiss it.
+
+**On a touch screen**, tap the :information_source: icon in the lower right. This will switch to card details mode. Now any tap on a card will show the card details. To get back to the normal "action" mode, tap the :point_up_2: icon in the lower right.
 
 The player icons on the right indicate health levels, the current [rank](#end-of-turn), and the turn within the rank.
 
@@ -66,7 +68,7 @@ The `Load File` button will let you load a deck file you created in the deck bui
 
 ### Draft Screen
 
-A set of two to six cards will be presented on the left. Left click the card you want for your deck. Card names on the right can be right clicked to view card details. The game will start after 30 cards have been picked.
+A set of two to six cards will be presented on the left. Click/tap the card you want for your deck. Card names in the deck list (right side of screen) can be clicked to view card details as well. The game will start after 30 cards have been picked.
 
 ### Extras Screen
 
