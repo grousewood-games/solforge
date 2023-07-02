@@ -44,7 +44,7 @@ The primary goal of the game is to reduce your opponent's health to 0 (or below)
 
 Available choices will be highlighted in green rectangles, or be presented on the red button in the middle-right of the board. Left click your mouse over what your heart desires. A red rectangle indicates you can Cancel the current action.
 
-Any card can be right clicked to view the details -- the card text and all levels for the card. Click anywhere on this view to dismiss it.
+Any card can be right clicked to [view the details](#card-details-view) -- the card text and all levels for the card.
 
 **On a touch screen**, tap the :information_source: icon in the lower right. This will switch to card details mode. Now any tap on a card will show the card details. To get back to the normal "action" mode, tap the :point_up_2: icon in the lower right.
 
@@ -57,6 +57,14 @@ Below the field are the cards in your hand. If you have more than five cards in 
 For creatures that have both an `Activate` and `Mobility` action available, clicking the creature will start the Mobility action, but the Activate choice will be presented on the main button (cancelling the Mobility request).
 
 When the AI is playing, none of the click actions will work (including right clicks to view card data and hand scroller arrows).
+
+### Card Details View
+
+This shows all the information for a card.
+
+Use the level icons in the lower left to view different card levels. If the card has related cards, buttons will be presented on the lower right to switch the view to those cards. When viewing a related card, a `Back` button will appear to return to the previous card.
+
+The card details view can be dismissed by clicking the `Close` button, or clicking anywhere on the card image.
 
 ### Constructed Screen
 
@@ -79,6 +87,7 @@ The following game modes are available to enhance your fun:
 - `Big Health`: Players have a higher starting health, allowing time for stupider combos to happen.
 - `Cheater`: If you play too good, the AI will cheat.
 - `Battle Bark`: Lets you turn on or off the battle sound.
+- `Big Cards`: Shows larger card images when viewing the card details. Turning off will reduce the amount of data requested by the game. 
 
 ## Turn Structure
 

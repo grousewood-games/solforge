@@ -17,6 +17,8 @@ The orange scroller arrow icons were made by [Programmer16](https://opengameart.
 
 Square icons generated on [Game-Icons](https://game-icons.net).
 
+Enhanced versions of the large card frames are courtesty of [Spruce](https://reddit.com/user/SolSpruce/).
+
 A thank you to `Ximane` who wrote and published the "[Advanced Solforge Rules](https://solforge.fandom.com/wiki/Advanced_Rules)" back in the day. It has been an indispensable guide in my attempts to recreate the game as accurately as possible.
 
 Much respect to [Kaelari](#will-you-implement-online-play) for his generous sharing of some original game assets.
