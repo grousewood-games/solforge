@@ -197,9 +197,18 @@
 
             // write text to a file download
             function saveAsFile(contents) {
+                var deckname = 'deck';
+                var decknameHtml = gettum('deckname');
+                if (decknameHtml) {
+                    var usr = decknameHtml.value;
+                    usr = usr.trim().toLowerCase().replaceAll(' ', '-');
+                    if (usr) {
+                        deckname = usr;
+                    }
+                }
                 var linkus = document.createElement('a');
                 linkus.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(contents));
-                linkus.setAttribute('download', 'deck.txt');
+                linkus.setAttribute('download', `${deckname}.txt`);
                 linkus.style.display = 'none';
                 document.body.appendChild(linkus);
 
@@ -308,6 +317,8 @@
                 var picker = gettum('fileupload');
                 picker.click();
             }
+
+            // snausage
         </script>
     </head>
     <body>
