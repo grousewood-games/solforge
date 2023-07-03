@@ -87,6 +87,7 @@ The following game modes are available to enhance your fun:
 - `Big Health`: Players have a higher starting health, allowing time for stupider combos to happen.
 - `Cheater`: If you play too good, the AI will cheat.
 - `Battle Bark`: Lets you turn on or off the battle sound.
+- `90% Size`: Will shrink the UI by 10%. Useful to make the app fit on tablets with `4:3` aspect ratio.
 - `Big Cards`: Shows larger card images when viewing the card details. Turning off will reduce the amount of data requested by the game. 
 
 ## Turn Structure

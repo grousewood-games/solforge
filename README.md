@@ -8,7 +8,7 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 
 ## Current Release
 
-### (Forge Guardian) Beta `v0.3.0`
+### (Forge Guardian) Beta `v0.3.1`
 
 - All cards in Sets 1 & 2 freely available.
 - Constructed and Draft modes.
@@ -16,10 +16,11 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 - Fun bonus modes.
 - Unfriendly deckbuilder.
 - Best played on a desktop monitor with standard resolution (1080p non-retina) and a pointer device.
-- Tablet / retina _works_ but has significant issues at the moment.
+- Tablet / retina _works_ but has some issues at the moment.
   - Fonts in the game field can be blurry or offset.
   - Tablet screen dimensions can be a poor fit for the layout.
   - Loading and saving constructed deck files is highly suspect.
+  - Feel free to log issues with your bad experiences; I'm limited with what devices I can test on.
 
 ## Legal Stuff
 
