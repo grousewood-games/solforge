@@ -183,6 +183,10 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 
 `Allied`: The keyword is followed by a faction. It is like Forge, but also requires a card of the listed faction is in your hand.
 
+`Banish`: A card that is Banished is removed from the game.
+
+`Consistent`: A Consistent card is guaranteed to be shuffled into the first 20 cards of your draw deck. This means you will draw it in one of the four turns of the current Rank.
+
 `Flank`: An ability that happens when the creature moves to a different lane, via Mobility or other effects.
 
 `Gain Rank`: This ability will happen at the end of the players fourth turn in the current rank.
@@ -194,6 +198,8 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 `Overload`: When played, a card with Overload is not placed in the discard pile, but is removed from the game.
 
 `Replace`: The target creature will be replaced with a new creature. The target is not considered to have died. Forging on top of an existing creature counts as a Replace.
+
+`Solbind`: If a card with Solbind is included in your deck, any cards listed after the Solbind keyword are inserted into your deck at the start of the game.
 
 `Spawn`: Will create a new creature in a randomly chosen empty lane. If all lanes are occupied, nothing will happen.
 
@@ -216,12 +222,6 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 `Empty/Available Lane`: A lane with no creature in it.
 
 ### Abilities in Future Sets
-
-`Banish`: _introduced in Set 3_
-
-`Consistent`: _introduced in Set 3_
-
-`Solbind`: _introduced in Set 3_
 
 `Assault`: _introduced in Set 4_
 

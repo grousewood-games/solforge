@@ -136,7 +136,7 @@ Certain mechanics found in the original game have been slightly changed for my o
   - In this version, the order will be the same if the initial conditions are the same.
   - For the real keeners, actual order somewhat explained [here](rules.md#trigger-resultion-order). In this case there is one event we care about (Creature Enters), and Dryad had to exist first. Thus Dryad will always trigger second, resulting in a 9/9.
 - `Brightsteel Gargoyle` does not change image when in defender mode. The amount of trickery to make this one card act fancy is currently in the "not worth it" pile.
-- When playing `Metasight`, once a first card is selected for leveling, it is leveled. You cannot cancel back and re-pick as you can in most multi-select operations.
+- When playing `Metasight` or `Perilous Insight`, once a first card is selected for leveling, it is leveled. You cannot cancel back and re-pick as you can in most multi-select operations.
 - There is currently no "sudden death" mode. If you both die and have the same health in death, you both win :trophy:.
 - Rules regarding creatures who affect other creatures based on event triggers, but die as the events happen. These were unclear in some cases and may be implemented different.
   - The rules for `Dr. Frankenbaum` and `Yuru, the Necrosage` were documented. Their effects only apply if they were alive, or died at the same time, when the target creature died. The time here is the specific death time, not the death check at the end of a [batch](rules.md#advanced-event-timing).
@@ -154,7 +154,16 @@ Certain mechanics found in the original game have been slightly changed for my o
   - Scenario 2:  Play `Lvl2 Master of Elements`, Battle, play `Lvl1 Lightning Brand`, play `Lvl1 Call the Lightning`.
     - In original Solforge, `Master of Elements` would battle twice after `Call the Lightning` was cast.
     - In this version, `Master of Elements` would battle one time after `Call the Lightning` was cast.
-  - The new general rule is the first battle is the primary battle, and creatures only have a chance to participate in that if they are eligible at the time the button is pressed. Extra battles can only be spent after the primary battle. If a creature has an extra battle and is offensive, the battle button will be made available.  
+  - The new general rule is the first battle is the primary battle, and creatures only have a chance to participate in that if they are eligible at the time the button is pressed. Extra battles can only be spent after the primary battle. If a creature has an extra battle and is offensive, the battle button will be made available.
+- The behavior of `Grimgaunt Doomrider` is slighlty different. A dying Doomrider will move to the lane where a friendly creature died. In the original game it would not, but would still apply the debuff in that lane. An example:
+  - On your board are two `Grimgaunt Doomrider`s and a `Nexus Core`. Your opponent has a `Flamebreak Invoker` opposite your mighty Core.
+  - It is your opponents turn. They cast `Glacial Crush` on the Core.
+  - The initial batch following the spell contains events for both casting the spell, and destroying the Core.
+  - As it is your opponents turn, the first tigger to happen is Flamebreak Invoker reacting to the spell. It deals enough damage to both Doomriders to take their health well below zero (enough that they cannot buff themselves back to 1 health).
+  - The next triggers are the Doomriders reacting to the death of the Core. While their health indicates they are at the moment dead, they are still in the batch so are not considered officially dead.
+  - In the original Solforge, neither Doomriders would move, thus leaving the Core's lane unoccupied. However, they would apply apply the debuff to the Invoker opposite the core. Since neither moved, both Doomriders would see the Core's lane as empty, so both will apply the debuff.
+  - In this version, the first Doomrider to trigger will move to the Core's lane and debuff the Invoker. The second Doomrider will trigger, see the lane as occupied, and do nothing. The Invoker is only debuffed once.
+  - In both cases, the Doomriders die at the end of the batch.
 
 ### Wish List
 
