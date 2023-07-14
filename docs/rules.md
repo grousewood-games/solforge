@@ -70,7 +70,9 @@ The card details view can be dismissed by clicking the `Close` button, or clicki
 
 The list on the left represents collections of decks. Clicking one will show individual decks on the right. Click one of them to play with that deck. There is currently no UI to inspect the deck contents, so enjoy the surprise.
 
-The `Random` deck choice will pick one of the pre-provided decks to play with.
+The `Random Deck` choice will pick one of the pre-provided decks to play with.
+
+The `Random Cards` choice will pick a deck of 30 unique cards. A true dogs breakfast!
 
 The `Load File` button will let you load a deck file you created in the deck builder.
 
@@ -106,7 +108,7 @@ A player may do things in any order:
 - Play a card.
 - Battle.
 - Move an awake creature that has `Mobility`.
-- Use an effect for an awake creature with an `Activate` ability.
+- Use an `Activate` effect of an awake creature.
 
 The Battle action is mandatory. All other choices are optional.
 
