@@ -3,14 +3,14 @@
 A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wiki/SolForge).
 
 - [Play the Game](https://grousewood-games.github.io/solforge/play/)
-- [How to Play](docs/rules.md)
-- Additional [Info and FAQ](docs/faq.md)
+- [How to Play](https://grousewood-games.github.io/solforge/docs/rules)
+- Additional [Info and FAQ](https://grousewood-games.github.io/solforge/docs/faq)
 
 ## Current Release
 
-### (Forge Guardian) Beta `v0.4.2`
+### (Forge Guardian) Beta `v0.5.0`
 
-- All cards in Sets 1, 2 & 3 freely available.
+- All cards in Sets 1 to 4 freely available.
 - Constructed and Draft modes.
 - Battle vs the AI (artificial unintelligence is more accurate).
 - Fun bonus modes.
@@ -18,10 +18,31 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 - Best played on a desktop monitor with standard resolution (1080p non-retina) and a pointer device.
 - Tablet / retina _works_ but has some issues at the moment.
   - Tablet screen dimensions can be a poor fit for the layout.
+  - Touch controls to view card details are sub-par.
   - Feel free to log issues with your bad experiences; I'm limited with what devices I can test on.
+
+### Data Footprint
+
+The core application (game logic, backgrounds, UI elements) will weigh in around 12mb. Each card level will draw around 70kb. If an enthusiastic player views every level of every card, the total download will be around 105mb.
+
+Turning off the `Big Cards` option will shave 7mb off the core app, and 71mb from all the cards (an average of 50kb per card level). You won't see the art in full glory, but it will be respectful to your data plan.
+
+## Parental Guide
+
+### Violence
+
+The game has implied fantasy violence and death ("doing battle", "inflicting damage", creatures "being destroyed"). Visually the cards just bump against each other. Some card art may depict violence in still form (e.g. creatures burning, inflicted with poison, having wounds).
+
+### Nudity
+
+The game artwork can contain scantily clad creatures of varying species and genders. I don't believe you can see any naughty bits in the raw, nor are there any depictions of naughty acts.
+
+### Scary Stuff
+
+The game art contains scary monsters. Very scary. Look out!
 
 ## Legal Stuff
 
-I've looked at the various licenses on github but I don't read lawyer well. My code is open, do with it as you please. That said, as outlined in the [credits](docs/faq.md#credits), a good portion of this is the intellectual property of others. Trying to take anything from this repo and monetize it in any form is highly inadvisable. You might get a lunch date with a cease & desist.
+I've looked at the various licenses on github but I don't read lawyer well. My code is open, do with it as you please. That said, as outlined in the [credits](https://grousewood-games.github.io/solforge/docs/faq#credits), a good portion of this is the intellectual property of others. Trying to take anything from this repo and monetize it in any form is highly inadvisable. You might get a lunch date with a cease & desist.
 
 Use your noggin :brain:. Show respect :trophy:.

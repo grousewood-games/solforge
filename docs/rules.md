@@ -1,6 +1,6 @@
 # Rules
 
-A good chunk of this was influenced (or outright lifted) from the [Solforge Wiki](https://solforge.fandom.com/wiki/How_to_Play), primarily written by [Vandergus](https://vandergusdrafting.tumblr.com/), [Djurre](https://www.reddit.com/user/Djurre1980/), and [RavenBlackFeather](https://solforge.fandom.com/wiki/User:RavenBlackFeather). There was a second document I had in my possession giving an overview of game mechanics, which I'm also sourcing from. I have no idea who wrote it, googling quotes has been hitless. If you think it's you, let me know, happy to credit.
+A good chunk of this was influenced (or outright lifted) from the [Solforge Wiki](https://antifandom.com/solforge/wiki/How_to_Play), primarily written by [Vandergus](https://vandergusdrafting.tumblr.com/), [Djurre](https://www.reddit.com/user/Djurre1980/), and [RavenBlackFeather](https://solforge.fandom.com/wiki/User:RavenBlackFeather). There was a second document I had in my possession giving an overview of game mechanics, which I'm also sourcing from. I have no idea who wrote it, googling quotes has been hitless. If you think it's you, let me know, happy to credit.
 
 Given the current state of the UI, if you never played the original game, watching some short [tutorials on Youtube](https://www.youtube.com/watch?v=i9YqvljwxIQ) may go a long way to having a confusion free first experience.
 
@@ -185,6 +185,8 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 
 `Allied`: The keyword is followed by a faction. It is like Forge, but also requires a card of the listed faction is in your hand.
 
+`Assault`: This ability will only happen if the creature was Forged into a lane with no opposing creature.
+
 `Banish`: A card that is Banished is removed from the game.
 
 `Consistent`: A Consistent card is guaranteed to be shuffled into the first 20 cards of your draw deck. This means you will draw it in one of the four turns of the current Rank.
@@ -205,6 +207,8 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 
 `Spawn`: Will create a new creature in a randomly chosen empty lane. If all lanes are occupied, nothing will happen.
 
+`Upgrade`: This ability will happen if the creature Replaced another creature.
+
 `Vengeance`: This ability will happen when the creature dies or is destroyed.
 
 ### Non-Keyword Abilities
@@ -224,10 +228,6 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 `Empty/Available Lane`: A lane with no creature in it.
 
 ### Abilities in Future Sets
-
-`Assault`: _introduced in Set 4_
-
-`Upgrade`: _introduced in Set 4_
 
 `Ambush`: _introduced in Set 5_
 
@@ -339,7 +339,13 @@ Any new and unhandled events raised in the second and third batches are processe
 
 The order in which triggers resolve is deterministic, but can be difficult for a person to track in more complex scenarios.
 
-The primary determining factor is the order in which events entered the batch. This is not obvious since non-interactive and combo'd things happen in order dicated by the code. In our `Dreadbolt` example above, it is not clear which event is generated first (spoiler, it's the Creature Destroyed event). For spells, the Card Played event is typically last, and forging creatures the Card Played event is usually first. But there are many other permutations that I won't list out.
+The primary determining factor is the order in which events entered the batch. This is not obvious since non-interactive and combo'd things happen in order dicated by the code. In our `Dreadbolt` example above, it is not clear which event is generated first (spoiler, it's the Creature Destroyed event).
+
+- For spells, the Card Played event is typically last
+- For forging creatures the Card Played event is usually first. 
+- For creature replacement the replacement event is created before the creature enters event.
+
+But there are many other permutations that I won't list out.
 
 The secondary factor is the order creatures appeared on the board. On the same event, triggers on a newer creature will be processed before an older creature. Again, this can be difficult to track in cases with multiple Spawns.
 

@@ -5,7 +5,8 @@
 - [Credits](#credits)
 - [Getting Started](#getting-started)
 - [Feature Requests and Problems](#feature-requests-and-problems)
-- [Game Details](#game-details)
+- [Game Differences](#game-differences)
+- [Wish List](#wish-list)
 
 ## Credits
 
@@ -112,60 +113,95 @@ You can. I make no promises that it will get get done, but no harm in asking.  P
 
 ### Do You Plan To Add More Cards?
 
-Yes! Would like to get them all implemented. Set 3 should happen for sure, barring any disasters. Shortcomings of the UI will likely be prioritized first (some Set 3 cards also require a discard picker which needs to be built).
-
-### Will You Implement Cards With Pre-Rebalance Stats?
-
-Likely no. Would be a bit fun for some of the older decks, but is a pile of dull work just coding in the alt data and switches to manage it.
+Yes! Would like to get them all implemented. I'm currently focused on cards since they are more fun to code. UI and AI improvements will likely happen afterwards.
 
 ### You Call That A Deckbuilder?
 
 Yeah it's nasty. I just wanted something that would let people brew a deck. Making a proper builder with filters and such is going to take a minute.
 
-## Game Details
-
-### Differences
+## Game Differences
 
 Certain mechanics found in the original game have been slightly changed for my own sanity.
 
-- `Lvl3 Lyria, Muse of Varna` now places creatures all at once, not in sequence.
-  - An example: if Lyria brought back four `Lvl1 Spring Dryads`, in the original game you would end up with a 4/4, 5/5, 6/6, and 7/7 set of Dryads. In this edition, you will end up with four 7/7 Dryads.
-- Batch resolution is not randomized.
-  - An example: a 5/5 `Lvl1 Spring Dryad` is on board, `Lvl2 Weirwood Patriarch` is forged.
-  - In the original game, the effect that triggered first was random. You could end up with a 6/6 Dryad or a 9/9 Dryad.
-  - In this version, the order will be the same if the initial conditions are the same.
-  - For the real keeners, actual order somewhat explained [here](rules.md#trigger-resultion-order). In this case there is one event we care about (Creature Enters), and Dryad had to exist first. Thus Dryad will always trigger second, resulting in a 9/9.
-- `Brightsteel Gargoyle` does not change image when in defender mode. The amount of trickery to make this one card act fancy is currently in the "not worth it" pile.
-- When playing `Metasight` or `Perilous Insight`, once a first card is selected for leveling, it is leveled. You cannot cancel back and re-pick as you can in most multi-select operations.
-- There is currently no "sudden death" mode. If you both die and have the same health in death, you both win :trophy:.
-- Rules regarding creatures who affect other creatures based on event triggers, but die as the events happen. These were unclear in some cases and may be implemented different.
-  - The rules for `Dr. Frankenbaum` and `Yuru, the Necrosage` were documented. Their effects only apply if they were alive, or died at the same time, when the target creature died. The time here is the specific death time, not the death check at the end of a [batch](rules.md#advanced-event-timing).
-  - As such, the following cards are using the same principle: `Tarsus, Deathweaver`, `Uterradon Rex`, `Oreian Justicar`, `Sorrow Harvester`.
-  - An example:
-    - A player controls `Lvl1 Tarsus` and `Lvl1 Grove Matriarch`. Tarsus is opposing `Lvl1 Vengeful Spirit`, Matriarch is opposing `Lvl1 Swampmoss Lurker`.
-    - Battle happens. In the combat batch, every creature but Tarsus dies. Tarsus has 2 health remaining. Nothing happens in the combat effects batch.
-    - In the death effects batch, both Vengeance triggers are resolved.
-    - If the Spirit trigger resolves first, Tarsus will be dead prior to the Matriarch dropping a `Seedling`. The Seedling will not get buffed by Tarsus.
-    - If the Matriarch trigger resolves first, Tarsus is still alive and will buff the Seedling. This happens even though the "Creature Enters" event is processed in the next batch, and Tarsus has been marked dead at the end of the death effects batch.
-- Rules around extra battles are slightly different.
-  - Scenario 1: Play `Lvl2 Master of Elements`, Battle, play `Lvl1 Call the Lightning`, play `Lvl1 Lightning Brand`.
-    - In original Solforge, `Master of Elements` would not battle at all.
-    - In this version, `Master of Elements` would battle one time after `Lightning Brand` was cast.
-  - Scenario 2:  Play `Lvl2 Master of Elements`, Battle, play `Lvl1 Lightning Brand`, play `Lvl1 Call the Lightning`.
-    - In original Solforge, `Master of Elements` would battle twice after `Call the Lightning` was cast.
-    - In this version, `Master of Elements` would battle one time after `Call the Lightning` was cast.
-  - The new general rule is the first battle is the primary battle, and creatures only have a chance to participate in that if they are eligible at the time the button is pressed. Extra battles can only be spent after the primary battle. If a creature has an extra battle and is offensive, the battle button will be made available.
-- The behavior of `Grimgaunt Doomrider` is slighlty different. A dying Doomrider will move to the lane where a friendly creature died. In the original game it would not, but would still apply the debuff in that lane. An example:
-  - On your board are two `Grimgaunt Doomrider`s and a `Nexus Core`. Your opponent has a `Flamebreak Invoker` opposite your mighty Core.
-  - It is your opponents turn. They cast `Glacial Crush` on the Core.
-  - The initial batch following the spell contains events for both casting the spell, and destroying the Core.
-  - As it is your opponents turn, the first tigger to happen is Flamebreak Invoker reacting to the spell. It deals enough damage to both Doomriders to take their health well below zero (enough that they cannot buff themselves back to 1 health).
-  - The next triggers are the Doomriders reacting to the death of the Core. While their health indicates they are at the moment dead, they are still in the batch so are not considered officially dead.
-  - In the original Solforge, neither Doomriders would move, thus leaving the Core's lane unoccupied. However, they would apply apply the debuff to the Invoker opposite the core. Since neither moved, both Doomriders would see the Core's lane as empty, so both will apply the debuff.
-  - In this version, the first Doomrider to trigger will move to the Core's lane and debuff the Invoker. The second Doomrider will trigger, see the lane as occupied, and do nothing. The Invoker is only debuffed once.
-  - In both cases, the Doomriders die at the end of the batch.
+### Card Versions
 
-### Wish List
+The cards have been implemented in what's been dubbed "the wiki version". I believe this is the second-to-last rebalance before the game shuttered, and is what is reflected in the [Solforge Wiki](https://antifandom.com/solforge/wiki/Card_Sets).
+
+I don't even have the details of the final rebalance, but I suspect KaelForge has implemented those specs. Implementing earlier versions may be fun (especially for revisiting older metas), but is currently the lowest of priorities and considered more chore than useful.
+
+### Randomized Batches
+
+Batch resolution is not randomized.
+
+- An example: a 5/5 `Lvl1 Spring Dryad` is on board, `Lvl2 Weirwood Patriarch` is forged.
+- In the original game, the effect that triggered first was random. You could end up with a 6/6 Dryad or a 9/9 Dryad.
+- In this version, the order will be the same if the initial conditions are the same.
+- For the real keeners, actual order somewhat explained [here](rules.md#trigger-resultion-order). In this case there is one event we care about (Creature Enters), and Dryad had to exist first. Thus Dryad will always trigger second, resulting in a 9/9.
+
+### Multiple Card Levelling
+
+When playing `Metasight`, `Perilous Insight`, or `Lvl3 Killion`, once a first card is selected for levelling, it is leveled. You cannot cancel back and re-pick as you can in most multi-select operations.
+
+Similarly, `Discordant Strike` and `Thunderstomp` will apply the first effect and cannot be undone. This is to avoid confusion that the selection was registered, as the same target can be chosen for the second effect.
+
+### Sudden Death
+
+There is currently no "sudden death" mode. If you both die and have the same health in death, you both win :trophy:.
+
+### Extra Battles
+
+Rules around extra battles are slightly different. The new general rule is the first battle is the primary battle, and creatures only have a chance to participate in that if they are eligible at the time the button is pressed. Extra battles can only be spent after the primary battle. If a creature has an extra battle and is capable of battling, the battle button will be made available.
+
+- Scenario 1: Play `Lvl2 Master of Elements`, Battle, play `Lvl1 Call the Lightning`, play `Lvl1 Lightning Brand`.
+  - In original Solforge, `Master of Elements` would not battle at all.
+  - In this version, `Master of Elements` would battle one time after `Lightning Brand` was cast.
+- Scenario 2:  Play `Lvl2 Master of Elements`, Battle, play `Lvl1 Lightning Brand`, play `Lvl1 Call the Lightning`.
+  - In original Solforge, `Master of Elements` would battle twice after `Call the Lightning` was cast.
+  - In this version, `Master of Elements` would battle one time after `Call the Lightning` was cast.
+
+Regarding `Vaerus, Herald of Fury`, a creature receives the extra battle as one would expect (start of turn, Vaerus enters field, or new creature enters field). However, if Vaerus dies prior to the battle being used, the creature retains the extra battle.
+
+### Lyria
+
+`Lvl3 Lyria, Muse of Varna` now places creatures all at once, not in sequence. An example: if Lyria brought back four `Lvl1 Spring Dryads`, in the original game you would end up with a 4/4, 5/5, 6/6, and 7/7 set of Dryads. In this edition, you will end up with four 7/7 Dryads.
+
+### Brightsteel Gargoyle
+
+`Brightsteel Gargoyle` does not change image when in defender mode. The amount of trickery to make this one card act fancy is currently in the "not worth it" pile.
+
+### Grimgaunt Doomrider
+
+The behavior of `Grimgaunt Doomrider` is slighlty different. A dying Doomrider will move to the lane where a friendly creature died. In the original game it would not, but would still apply the debuff in that lane. An example:
+
+- On your board are two Grimgaunt Doomriders and a `Nexus Core`. Your opponent has a `Flamebreak Invoker` opposite your mighty Core.
+- It is your opponents turn. They cast `Glacial Crush` on the Core.
+- The initial batch following the spell contains events for both casting the spell, and destroying the Core.
+- As it is your opponents turn, the first trigger to happen is Flamebreak Invoker reacting to the spell. It deals enough damage to both Doomriders to take their health well below zero (enough that they cannot buff themselves back to 1 health).
+- The next triggers are the Doomriders reacting to the death of the Core. While their health indicates they are at the moment dead, they are still in the batch so are not considered officially dead.
+- In the original Solforge, neither Doomriders would move, thus leaving the Core's lane unoccupied. However, they would apply apply the debuff to the Invoker opposite the core. Since neither moved, both Doomriders would see the Core's lane as empty, so both will apply the debuff.
+- In this version, the first Doomrider to trigger will move to the Core's lane and debuff the Invoker. The second Doomrider will trigger, see the lane as occupied, and do nothing. The Invoker is only debuffed once.
+- In both cases, the Doomriders die at the end of the batch.
+
+### Ator, Thunder Titan
+
+I cannot find what the original behavior was, but `Ator, Thunder Titan` will not apply the `Assault` effect retroactively. Only creatures forged after Ator is on the field will receive his blessings.
+
+### Death and Triggers
+
+Rules regarding creatures who affect other creatures based on event triggers, but die as the events happen. These were unclear in some cases and may be implemented different.
+
+The rules for `Dr. Frankenbaum` and `Yuru, the Necrosage` were documented. Their effects only apply if they were alive, or died at the same time, when the target creature died. The time here is the specific death time, not the death check at the end of a [batch](rules.md#advanced-event-timing).
+
+As such, the following cards are using the same principle: `Tarsus, Deathweaver`, `Uterradon Rex`, `Oreian Justicar`, `Sorrow Harvester`.
+
+An example:
+- A player controls `Lvl1 Tarsus` and `Lvl1 Grove Matriarch`. Tarsus is opposing `Lvl1 Vengeful Spirit`, Matriarch is opposing `Lvl1 Swampmoss Lurker`.
+- Battle happens. In the combat batch, every creature but Tarsus dies. Tarsus has 2 health remaining. Nothing happens in the combat effects batch.
+- In the death effects batch, both Vengeance triggers are resolved.
+- If the Spirit trigger resolves first, Tarsus will be dead prior to the Matriarch dropping a `Seedling`. The Seedling will not get buffed by Tarsus.
+- If the Matriarch trigger resolves first, Tarsus is still alive and will buff the Seedling. This happens even though the "Creature Enters" event is processed in the next batch, and Tarsus has been marked dead at the end of the death effects batch.
+
+## Wish List
 
 I only captured a subset of information and assets back when the game was live. If you have any of the following and want to donate to help make the game better, please [get in touch](https://github.com/grousewood-games#contact)
 
