@@ -46,8 +46,6 @@ Available choices will be highlighted in green rectangles, or be presented on th
 
 Any card can be right clicked to [view the details](#card-details-view) -- the card text and all levels for the card.
 
-**On a touch screen**, tap the :information_source: icon in the lower right. This will switch to card details mode. Now any tap on a card will show the card details. To get back to the normal "action" mode, tap the :point_up_2: icon in the lower right.
-
 The player icons on the right indicate health levels, the current [rank](#end-of-turn), and the turn within the rank.
 
 The field consists of the 5x2 grid of squares. Your lanes are on the bottom, your opponents are on the top.
@@ -57,6 +55,12 @@ Below the field are the cards in your hand. If you have more than five cards in 
 For creatures that have both an `Activate` and `Mobility` action available, clicking the creature will start the Mobility action, but the Activate choice will be presented on the main button (cancelling the Mobility request).
 
 When the AI is playing, none of the click actions will work (including right clicks to view card data and hand scroller arrows).
+
+### Touch Screen Support
+
+Tapping the ℹ️ icon in the lower right will switch to card details mode. Now any tap on a card will show the card details. To get back to the normal "action" mode, tap the 👆 icon in the lower right.
+
+To temporarily view card details without changing modes, touch and hold a card for one second.
 
 ### Card Details View
 
@@ -317,7 +321,7 @@ When starting to process a batch, we figure out what will or could be triggered 
 - Non interactive triggers belonging to the non-active player.
 - Interactive triggers belonging to the active player.
 
-Each pile is then processed in the order above. If any triggers generate new events, they are queued in the next batch. That batch will be processed when the current batch finishes. The order of resolution in each bucket is deterministic, but is tricky to outline with concise rules. See the related entry in the [faq](faq.md#differences).
+Each pile is then processed in the order above. If any triggers generate new events, they are queued in the next batch. That batch will be processed when the current batch finishes. The order of resolution in each bucket is deterministic, but is tricky to outline with concise rules. See the related entry in the [faq](faq.md#differences), and a more in-depth analysis [below](#trigger-resultion-order).
 
 ### Death Checking
 
@@ -337,20 +341,42 @@ Any new and unhandled events raised in the second and third batches are processe
 
 ### Trigger Resultion Order
 
-The order in which triggers resolve is deterministic, but can be difficult for a person to track in more complex scenarios.
+The order in which triggers resolve is deterministic, but can be difficult for a person to track in more complex scenarios. A number of factors influence the order.
 
-The primary determining factor is the order in which events entered the batch. This is not obvious since non-interactive and combo'd things happen in order dicated by the code. In our `Dreadbolt` example above, it is not clear which event is generated first (spoiler, it's the Creature Destroyed event).
+[Events](#typicial-events) cause the triggers to activate, so the order in which events entered the batch matters. This is not obvious since non-interactive and combo'd things happen in order dicated by the code. Events are processed in a newest-first order. 
 
 - For spells, the Card Played event is typically last
 - For forging creatures the Card Played event is usually first. 
 - For creature replacement the replacement event is created before the creature enters event.
 
-But there are many other permutations that I won't list out.
+There are other less common permutations that I won't list out. In our `Dreadbolt` example [above](#normal-batches), we can determine the Creature Destroyed event entered the batch before the Card Played event.
 
-The secondary factor is the order creatures appeared on the board. On the same event, triggers on a newer creature will be processed before an older creature. Again, this can be difficult to track in cases with multiple Spawns.
+The order creatures appeared on the board matters. On the same event, triggers on a newer creature will be processed before an older creature. This can be difficult to track in cases with multiple Spawns.
 
-The third factor is the order a creature gains triggers. This can matter when a creature has two triggers that react to the same event. As an example, if `Spiritflame Mystic` has `Shallow Grave` casted on it, and then dies later in the turn, will the resurrected Mystic get hit with the original Mystic's `Vengeance` effect? Triggers are also processed in a newest-first order, so in this case, yes. The Vengeance trigger was assigned at creature creation, the Shallow Grave was assigned on a later play.
+The order a creature gains triggers matters, primarily when a creature has two triggers that react to the same event. As an example, if `Spiritflame Mystic` has `Shallow Grave` casted on it and then dies later in the turn, will the resurrected Mystic get hit with the original Mystic's `Vengeance` effect? Triggers are also processed in a newest-first order, so in this case, yes. The Vengeance trigger was assigned at creature creation, the Shallow Grave trigger was assigned on a subsequent card play.
 
-Remember the three batch piles triggers fall into will also influence the order in which things occur.
+Triggers on the player are resolved before triggers on creatures. Currently only `Epoch Soldier` is the only card that generates one of these, but more will arrive in Set 5.
+
+Remember the three [batch piles](#normal-batches) triggers fall into will also influence the order in which things occur.
 
 The main takeaway is if encountering similar board state, the trigger resolution should be the same. Basic interactions can be predicted, complex cascades of triggers not so much.
+
+### Trigger Resolution Algo
+
+For the real keeners, here is a rough outline of the trigger resolution order. Valid creatures for trigger testing include any active creature, or any creature that was destroyed or replaced in the current chain of batches.
+
+```text
+Create an empty trigger reaction list.
+
+For each Event in the batch (newest to oldest)
+  For both players
+    Test player triggers (newest to oldest) and add to the reaction list
+  For each creature (newest to oldest)
+    Test creature triggers (newest to oldest) and add to the reaction list
+
+Re-arrange the reaction list into three categories
+  Active player passive, inactive player passive, active player interactive
+  Otherwise the relative order of the trigger reactions does not change
+
+Process the trigger reactions in order
+```

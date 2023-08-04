@@ -57,13 +57,10 @@ Additional details can be found on the [rules](rules.md#rules) page.
 
 ### Known Shortcomings
 
-- The detailed card view on Forgeborn creatures is squished to fit.
-- It is not obvious what the source of an interactive trigger is.
-  - Example, play `Lvl1 Grove Huntress` when `Lvl2 Lifeshaper Savant` is on the board. When the action highlights appear on your friendly creatures, it is not clear if you are applying the Huntress buff or the Savant buff.
-- No way to see your deck, discard pile, or card counts in either.
 - Not everything is shown in the log.
 - Some text may render funny / too thin in Chromium based browsers (my bad for developing primarily in Firefox).
 - The AI can make some terrible choices.
+- The mobile & touch screen experience is not great.
 
 ## Feature Requests and Problems
 
@@ -83,13 +80,11 @@ Here is a post containing links to play the current version of [KaelForge](https
 
 ### Does This Work On A Touchscreen Tablet?
 
-Not very well. I only tested it briefly and a day before releasing the first beta.
+Not very well. I do plan to improve this over time. That said, I am limited to one older device to test on.
 
-Tapping works ok, however the fonts in the game area tend to get very blurry on screens with retina-level resolution. Tablet screen aspect ratio is also not ideal; I found I needed to shrink my browser chrome, and even then the log was quite crammed.
+See the [game interface](rules.md#touch-screen-support) section for what type of touch support is currently implemented.
 
-The file saving and loading for constructed decks is highly suspect.
-
-I plan to take a shot at making this work, since I'd enjoy the option. Requires some R&D and an impact analysis on how much refactoring is required to adapt to retina resolution.
+Current roadblocks include varying screen aspect ratios and resolutions, and differing standards implementions on Android and iOS (font rendering and touch events in particular).
 
 ### Can This Be Played With A Keyboard?
 
@@ -103,13 +98,13 @@ While I admit dragging cards to their targets is way more fun, it would involve 
 
 Feel free to [log a new issue](https://github.com/grousewood-games/solforge/issues/new), or message me about it if you don't have a Github account (see the [Contact](https://github.com/grousewood-games#contact) page). Please review the [issue log](https://github.com/grousewood-games/solforge/issues) first as it may already be logged.
 
-If the game freezes, providing a screenshot or copied text from the browsers console (mash the `F12` key to see it) may be helpful.
+If the game freezes, providing a screenshot or copied text from the browsers console may be helpful (mash the `F12` key to see it).
 
 Reports of incorrect text/stats on cards (or cards not doing what they are supposed to) are also encouraged.
 
 ### Can I Request A New Feature?
 
-You can. I make no promises that it will get get done, but no harm in asking.  Please review this FAQ and the [issue log](https://github.com/grousewood-games/solforge/issues) first as it may already be addressed. Give a :+1: reaction to existing entries you want. Otherwise feel free to [open a new discussion](https://github.com/grousewood-games/solforge/discussions), or message me about it if you don't have a Github account (see the [Contact](https://github.com/grousewood-games#contact) page).
+You can. I make no promises that it will get get done, but no harm in asking.  Please review this FAQ and the [issue log](https://github.com/grousewood-games/solforge/issues) first as it may already be addressed. Give a 👍 reaction to existing entries you want. Otherwise feel free to [open a new discussion](https://github.com/grousewood-games/solforge/discussions), or message me about it if you don't have a Github account (see the [Contact](https://github.com/grousewood-games#contact) page).
 
 ### Do You Plan To Add More Cards?
 
@@ -146,7 +141,7 @@ Similarly, `Discordant Strike` and `Thunderstomp` will apply the first effect an
 
 ### Sudden Death
 
-There is currently no "sudden death" mode. If you both die and have the same health in death, you both win :trophy:.
+There is currently no "sudden death" mode. If you both die and have the same health in death, you both win 🏆.
 
 ### Extra Battles
 
