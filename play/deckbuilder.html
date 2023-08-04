@@ -37,6 +37,7 @@
 
             .numButt {
                 width: 22px;
+                touch-action: manipulation;
             }
 
             .filterList {
@@ -115,7 +116,7 @@
                 return document.getElementById(id);
             }
 
-            // add card button handler
+            // add card button handler (main decklist)
             function add(card, faction) {
                 var countEl = findCountEl(card);
                 var numnum = getNumGuts(countEl);
@@ -129,7 +130,7 @@
                 }
             }
 
-            // remove card button handler
+            // remove card button handler (main decklist)
             function remove(card, faction) {
                 var countEl = findCountEl(card);
                 var numnum = getNumGuts(countEl);
@@ -140,6 +141,31 @@
                     theStats.count--;
                     theStats.fcnt[factionIdx(faction)]--;
                     updateStats();
+                }
+            }
+
+            // increment card in deck selection
+            function incCard(card) {
+                remoteSeeker(card, true);
+            }
+
+            // decrement card in deck selection
+            function decCard(card) {
+                remoteSeeker(card, false);
+            }
+
+            // given a card, clicks the add or remove button for that card
+            function remoteSeeker(card, add) {
+                // find row in main list
+                var row = gettum(card);
+                if (row) {
+                    // button index
+                    var indy = add ? 3 : 4;
+                    var targbutt = row.children[indy].firstElementChild;
+
+                    targbutt.click();
+                } else {
+                    iAmError('Invalid card code: ' + cn.card);
                 }
             }
 
@@ -261,8 +287,18 @@
                 var dlist = gettum('picklist');
                 dlist.innerHTML = '';
                 deck.filter(n => n.num > 0)
-                    .map(n => `${findName(n.card)}: ${n.num}`)
-                    .sort()
+                    .map(n => {
+                        return {
+                            num: n.num,
+                            card: n.card,
+                            name: findName(n.card)
+                        };
+                    })
+                    .sort((n1, n2) => n1.name.localeCompare(n2.name))
+                    .map(
+                        n =>
+                            `<button class="numButt" onclick="incCard('${n.card}')">+</button> <button class="numButt" onclick="decCard('${n.card}')">-</button> ${n.name}: ${n.num}`
+                    )
                     .forEach(n => listGuts(dlist, n));
             }
 
