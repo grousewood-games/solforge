@@ -72,24 +72,49 @@ The card details view can be dismissed by clicking the `Close` button, or clicki
 
 ### Constructed Screen
 
-The list on the left represents collections of decks. Clicking one will show individual decks on the right. Click one of them to play with that deck. There is currently no UI to inspect the deck contents, so enjoy the surprise.
+The initial screen provides options to configure the Constructed match.
 
-The `Random Deck` choice will pick one of the pre-provided decks to play with.
+- The Opponent options determine who controls the second player.
+  - `Dumb Bot` will engage the whip-smart AI to counter your every strategy.
+  - `Human` will allow the user play both turns. Great for parties.
+- The Player options determine what deck will be used in the game for each side.
+  - `Pre-Con` will allow you to choose a pre-made deck (selected in another screen).
+  - `Random` will choose a random pre-constructed deck.
+  - `Scramble` will pick a deck of 30 unique cards. A true dogs breakfast!
+  - `Load File` will let you load a deck file you created in the deck builder.
+- The `Next` button will accept the choices and continue.
 
-The `Random Cards` choice will pick a deck of 30 unique cards. A true dogs breakfast!
+If either player selected the `Pre-Con` option, a screen will be presented to select the deck. The top left will indicate which player is currently picking.
 
-The `Load File` button will let you load a deck file you created in the deck builder.
+- The list on the left represents collections of decks. Clicking one will show individual decks on the right.
+- Clicking an individual deck will select that deck. There is currently no UI to inspect the deck contents, so enjoy the surprise.
 
 ### Draft Screen
 
-A set of two to six cards will be presented on the left. Click/tap the card you want for your deck. Card names in the deck list (right side of screen) can be clicked to view card details as well. The game will start after 30 cards have been picked.
+The initial screen provides options to configure the Draft match.
+
+- The Opponent options determine who controls the second player.
+  - `Dumb Bot` will engage the jovial and witty AI to be your gaming pal.
+  - `Human` will allow the user play both turns. No excuses for losing.
+- The Rarity Filter will let you exclude card rarities from the draftable cards. Useful to mix things up. Standard draft should have all rarities selected.
+- Draft Modes will tweak the rules for an alternate draft experience.
+  - `Good Packs` will cause the draft packs to have better odds of containing cards of a higher rarity.
+  - `Legendary` means first pack in the draft contains six Legendary cards.
+  - `Overdraft` has both players select 60 cards for enhanced stupidity.
+- The Sets selector will restrict which card sets are included in the draft.
+- The `Next` button will accept the choices and continue.
+
+Each human player will then draft cards in the drafting screen. The top left will indicate which player is currently picking.
+
+- A set of two to six cards will be presented on the left. Select the card you want for your deck.
+- Cards selected will be displayed on the right. Card names in this list can be clicked to view card details as well.
+
+The game will start after 30 cards have been picked.
 
 ### Extras Screen
 
 The following game modes are available to enhance your fun:
 
-- `Good Packs`: Draft packs have an increased chance of containing cards of higher rarity.
-- `Legendary`: The first pack in the draft contains six Legendary cards.
 - `Big Health`: Players have a higher starting health, allowing time for stupider combos to happen.
 - `Cheater`: If you play too good, the AI will cheat.
 - `Battle Bark`: Lets you turn on or off the battle sound.

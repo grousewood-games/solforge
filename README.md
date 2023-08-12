@@ -8,11 +8,12 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 
 ## Current Release
 
-### (Forge Guardian) Beta `v0.5.2`
+### (Forge Guardian) Beta `v0.5.3`
 
 - All cards in Sets 1 to 4 freely available.
 - Constructed and Draft modes.
-- Battle vs the AI (artificial unintelligence is more accurate).
+- Battle vs the pitiful AI.
+- Local head-to-head battle.
 - Fun bonus modes.
 - Unfriendly deckbuilder.
 - Best played on a desktop monitor with standard resolution (1080p non-retina) and a pointer device.
