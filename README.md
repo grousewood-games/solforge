@@ -8,7 +8,7 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 
 ## Current Release
 
-### (Forge Guardian) Beta `v0.6.0`
+### (Forge Guardian) Beta `v0.6.1`
 
 - All cards in Sets 1 to 4 freely available.
 - Constructed and Draft modes.
