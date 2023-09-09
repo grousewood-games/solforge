@@ -8,16 +8,16 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 
 ## Current Release
 
-### (Forge Guardian) Beta `v0.6.1`
+### (Forge Guardian) Beta `v0.6.2`
 
-- All cards in Sets 1 to 4 freely available.
-- Constructed and Draft modes.
-- Battle vs the somewhat improved AI.
-- Local head-to-head battle.
-- Fun bonus modes.
-- Unfriendly deckbuilder.
-- Best played on a desktop monitor with standard resolution (1080p non-retina) and a pointer device.
-- Tablet / retina _works_ but has some issues at the moment.
+- :flower_playing_cards: All cards in Sets 1 to 4 freely available.
+- :medal_military: Constructed and Draft modes.
+- :robot: Battle vs the somewhat improved AI.
+- :wrestling: Local head-to-head battle.
+- :clown_face: Fun bonus modes.
+- :crocodile: Unfriendly deckbuilder.
+- :desktop_computer: Best played on a desktop monitor with standard resolution (1080p non-retina) and a pointer device.
+- :iphone: Tablet / retina _works_ but has some issues at the moment.
   - Tablet screen dimensions can be a poor fit for the layout.
   - Touch controls to view card details are sub-par.
   - Feel free to log issues with your bad experiences; I'm limited with what devices I can test on.
