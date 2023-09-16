@@ -392,7 +392,7 @@
                 var ff = [gettum('fFA').checked, gettum('fFN').checked, gettum('fFT').checked, gettum('fFU').checked];
                 var rf = [gettum('fRC').checked, gettum('fRR').checked, gettum('fRH').checked, gettum('fRL').checked];
                 var tf = [gettum('fTC').checked, gettum('fTS').checked];
-                var sf = [gettum('fS1').checked, gettum('fS2').checked, gettum('fS3').checked, gettum('fS4').checked];
+                var sf = [gettum('fS1').checked, gettum('fS2').checked, gettum('fS3').checked, gettum('fS4').checked, gettum('fS5').checked];
                 var checkF = ff.includes(false);
                 var checkR = rf.includes(false);
                 var checkT = tf.includes(false);
@@ -462,6 +462,14 @@
                     <td><button class="numButt" onclick="remove('ABB', 'N')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="ABM" data-f="N" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Abyssal Maw</td>
+                    <td><button class="numButt" onclick="add('ABM', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('ABM', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="AGC" data-f="A" data-r="C" data-t="C" data-s="1">
                     <td><img src="img/icons/faction/alloyin.png" /></td>
                     <td><img src="img/icons/rarity/new/common.png" /></td>
@@ -500,6 +508,14 @@
                     <td>Aerial Surge</td>
                     <td><button class="numButt" onclick="add('ASG', 'T')">+</button></td>
                     <td><button class="numButt" onclick="remove('ASG', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="AMS" data-f="A" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Aeromind Squadron</td>
+                    <td><button class="numButt" onclick="add('AMS', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('AMS', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="AFO" data-f="A" data-r="C" data-t="C" data-s="2">
@@ -566,12 +582,36 @@
                     <td><button class="numButt" onclick="remove('ALS', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="AAA" data-f="A" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Ambriel Archangel</td>
+                    <td><button class="numButt" onclick="add('AAA', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('AAA', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="ABE" data-f="A" data-r="H" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Ambriel's Edict</td>
+                    <td><button class="numButt" onclick="add('ABE', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('ABE', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="ATZ" data-f="A" data-r="C" data-t="S" data-s="4">
                     <td><img src="img/icons/faction/alloyin.png" /></td>
                     <td><img src="img/icons/rarity/new/common.png" /></td>
                     <td>Anatomize</td>
                     <td><button class="numButt" onclick="add('ATZ', 'A')">+</button></td>
                     <td><button class="numButt" onclick="remove('ATZ', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="AEC" data-f="U" data-r="L" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Ancestral Echoes</td>
+                    <td><button class="numButt" onclick="add('AEC', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('AEC', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="ARB" data-f="A" data-r="H" data-t="C" data-s="4">
@@ -620,6 +660,14 @@
                     <td>Arcflight Squadron</td>
                     <td><button class="numButt" onclick="add('AFS', 'A')">+</button></td>
                     <td><button class="numButt" onclick="remove('AFS', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="AMD" data-f="T" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Ash Maiden</td>
+                    <td><button class="numButt" onclick="add('AMD', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('AMD', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="ABR" data-f="T" data-r="C" data-t="C" data-s="2">
@@ -678,6 +726,22 @@
                     <td><button class="numButt" onclick="remove('AIV', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="BRS" data-f="A" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Barrier Soldier</td>
+                    <td><button class="numButt" onclick="add('BRS', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('BRS', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="BTB" data-f="A" data-r="R" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Batterbot</td>
+                    <td><button class="numButt" onclick="add('BTB', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('BTB', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="BTH" data-f="U" data-r="R" data-t="C" data-s="3">
                     <td><img src="img/icons/faction/uterra.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -718,6 +782,14 @@
                     <td><button class="numButt" onclick="remove('BLH', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="BFT" data-f="N" data-r="C" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Bitterfrost Totem</td>
+                    <td><button class="numButt" onclick="add('BFT', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('BFT', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="BSP" data-f="N" data-r="C" data-t="C" data-s="2">
                     <td><img src="img/icons/faction/nekrium.png" /></td>
                     <td><img src="img/icons/rarity/new/common.png" /></td>
@@ -740,6 +812,14 @@
                     <td>Blight Witch</td>
                     <td><button class="numButt" onclick="add('BLW', 'N')">+</button></td>
                     <td><button class="numButt" onclick="remove('BLW', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="BZS" data-f="T" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Blizzard Shaman</td>
+                    <td><button class="numButt" onclick="add('BZS', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('BZS', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="BSR" data-f="N" data-r="R" data-t="C" data-s="1">
@@ -854,6 +934,14 @@
                     <td><button class="numButt" onclick="remove('BWT', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="BRH" data-f="N" data-r="R" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Brood Horror</td>
+                    <td><button class="numButt" onclick="add('BRH', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('BRH', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="BWH" data-f="A" data-r="R" data-t="S" data-s="1">
                     <td><img src="img/icons/faction/alloyin.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -894,6 +982,14 @@
                     <td><button class="numButt" onclick="remove('BSM', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="CKB" data-f="N" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Cacklebones</td>
+                    <td><button class="numButt" onclick="add('CKB', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('CKB', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="CDT" data-f="U" data-r="R" data-t="C" data-s="1">
                     <td><img src="img/icons/faction/uterra.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -932,6 +1028,14 @@
                     <td>Cavern Hydra</td>
                     <td><button class="numButt" onclick="add('CHY', 'U')">+</button></td>
                     <td><button class="numButt" onclick="remove('CHY', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="CSR" data-f="U" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Cavern Serpent</td>
+                    <td><button class="numButt" onclick="add('CSR', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('CSR', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="CHV" data-f="N" data-r="L" data-t="C" data-s="2">
@@ -1084,6 +1188,14 @@
                     <td>Corpulent Shambler</td>
                     <td><button class="numButt" onclick="add('CSB', 'N')">+</button></td>
                     <td><button class="numButt" onclick="remove('CSB', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="CNT" data-f="A" data-r="R" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Countermeasure</td>
+                    <td><button class="numButt" onclick="add('CNT', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('CNT', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="CWK" data-f="T" data-r="C" data-t="C" data-s="3">
@@ -1254,6 +1366,14 @@
                     <td><button class="numButt" onclick="remove('DCS', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="DDF" data-f="U" data-r="R" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Dendrify</td>
+                    <td><button class="numButt" onclick="add('DDF', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('DDF', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="DGZ" data-f="A" data-r="R" data-t="S" data-s="2">
                     <td><img src="img/icons/faction/alloyin.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -1302,12 +1422,36 @@
                     <td><button class="numButt" onclick="remove('DDD', 'N')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="DPB" data-f="A" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Doppelbot</td>
+                    <td><button class="numButt" onclick="add('DPB', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('DPB', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="DZD" data-f="U" data-r="L" data-t="C" data-s="3">
                     <td><img src="img/icons/faction/uterra.png" /></td>
                     <td><img src="img/icons/rarity/new/legendary.png" /></td>
                     <td>Dozer, the Dormant</td>
                     <td><button class="numButt" onclick="add('DZD', 'U')">+</button></td>
                     <td><button class="numButt" onclick="remove('DZD', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="DRE" data-f="T" data-r="L" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Draconic Echoes</td>
+                    <td><button class="numButt" onclick="add('DRE', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('DRE', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="DGW" data-f="T" data-r="L" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Dragonwake</td>
+                    <td><button class="numButt" onclick="add('DGW', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('DGW', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="DBT" data-f="N" data-r="H" data-t="S" data-s="1">
@@ -1510,6 +1654,14 @@
                     <td><button class="numButt" onclick="remove('EHN', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="EFA" data-f="T" data-r="R" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Everflame Aura</td>
+                    <td><button class="numButt" onclick="add('EFA', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('EFA', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="EFM" data-f="T" data-r="L" data-t="C" data-s="2">
                     <td><img src="img/icons/faction/tempys.png" /></td>
                     <td><img src="img/icons/rarity/new/legendary.png" /></td>
@@ -1524,6 +1676,14 @@
                     <td>Everflame Phoenix</td>
                     <td><button class="numButt" onclick="add('EFP', 'T')">+</button></td>
                     <td><button class="numButt" onclick="remove('EFP', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="EFE" data-f="U" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Everflow Eidolon</td>
+                    <td><button class="numButt" onclick="add('EFE', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('EFE', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="EXD" data-f="N" data-r="H" data-t="S" data-s="1">
@@ -1652,6 +1812,14 @@
                     <td>Flamefury Shaman</td>
                     <td><button class="numButt" onclick="add('FFS', 'T')">+</button></td>
                     <td><button class="numButt" onclick="remove('FFS', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="FJT" data-f="T" data-r="C" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Flame Jet</td>
+                    <td><button class="numButt" onclick="add('FJT', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('FJT', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="FLN" data-f="T" data-r="R" data-t="S" data-s="2">
@@ -2134,12 +2302,28 @@
                     <td><button class="numButt" onclick="remove('ITO', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="IME" data-f="N" data-r="L" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Immortal Echoes</td>
+                    <td><button class="numButt" onclick="add('IME', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('IME', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="IVS" data-f="N" data-r="C" data-t="S" data-s="4">
                     <td><img src="img/icons/faction/nekrium.png" /></td>
                     <td><img src="img/icons/rarity/new/common.png" /></td>
                     <td>Infernal Visage</td>
                     <td><button class="numButt" onclick="add('IVS', 'N')">+</button></td>
                     <td><button class="numButt" onclick="remove('IVS', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="ICD" data-f="N" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Iniog, Carrion Demon</td>
+                    <td><button class="numButt" onclick="add('ICD', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('ICD', 'N')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="IWC" data-f="A" data-r="C" data-t="C" data-s="1">
@@ -2222,6 +2406,14 @@
                     <td><button class="numButt" onclick="remove('KOD', 'N')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="KBE" data-f="U" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Killer Bee</td>
+                    <td><button class="numButt" onclick="add('KBE', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('KBE', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="KIW" data-f="A" data-r="L" data-t="C" data-s="3">
                     <td><img src="img/icons/faction/alloyin.png" /></td>
                     <td><img src="img/icons/rarity/new/legendary.png" /></td>
@@ -2276,6 +2468,38 @@
                     <td>Legion Titan</td>
                     <td><button class="numButt" onclick="add('LGT', 'N')">+</button></td>
                     <td><button class="numButt" onclick="remove('LGT', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="LLD" data-f="N" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Leyline Demon</td>
+                    <td><button class="numButt" onclick="add('LLD', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('LLD', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="LLG" data-f="U" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Leyline Golem</td>
+                    <td><button class="numButt" onclick="add('LLG', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('LLG', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="LLS" data-f="A" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Leyline Sentry</td>
+                    <td><button class="numButt" onclick="add('LLS', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('LLS', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="LLT" data-f="T" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Leyline Tyrant</td>
+                    <td><button class="numButt" onclick="add('LLT', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('LLT', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="LBD" data-f="U" data-r="H" data-t="C" data-s="1">
@@ -2334,6 +2558,14 @@
                     <td><button class="numButt" onclick="remove('LSP', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="LCE" data-f="A" data-r="L" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Lucid Echoes</td>
+                    <td><button class="numButt" onclick="add('LCE', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('LCE', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="LUC" data-f="T" data-r="L" data-t="C" data-s="4">
                     <td><img src="img/icons/faction/tempys.png" /></td>
                     <td><img src="img/icons/rarity/new/legendary.png" /></td>
@@ -2382,6 +2614,14 @@
                     <td><button class="numButt" onclick="remove('MMH', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="MHR" data-f="U" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Malice Hermit</td>
+                    <td><button class="numButt" onclick="add('MHR', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('MHR', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="MRF" data-f="N" data-r="C" data-t="C" data-s="1">
                     <td><img src="img/icons/faction/nekrium.png" /></td>
                     <td><img src="img/icons/rarity/new/common.png" /></td>
@@ -2420,6 +2660,14 @@
                     <td>Metamind Adept</td>
                     <td><button class="numButt" onclick="add('MMA', 'A')">+</button></td>
                     <td><button class="numButt" onclick="remove('MMA', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="MMR" data-f="A" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Metamind Archivist</td>
+                    <td><button class="numButt" onclick="add('MMR', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('MMR', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="MMX" data-f="A" data-r="C" data-t="C" data-s="2">
@@ -2566,6 +2814,14 @@
                     <td><button class="numButt" onclick="remove('NCF', 'N')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="NCM" data-f="N" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Necromoeba</td>
+                    <td><button class="numButt" onclick="add('NCM', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('NCM', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="NCS" data-f="N" data-r="R" data-t="C" data-s="1">
                     <td><img src="img/icons/faction/nekrium.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -2636,6 +2892,14 @@
                     <td>Nexus Gunner</td>
                     <td><button class="numButt" onclick="add('NXG', 'A')">+</button></td>
                     <td><button class="numButt" onclick="remove('NXG', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="NXO" data-f="A" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Nexus Overwatch</td>
+                    <td><button class="numButt" onclick="add('NXO', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('NXO', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="NXP" data-f="A" data-r="C" data-t="C" data-s="1">
@@ -2806,6 +3070,14 @@
                     <td><button class="numButt" onclick="remove('OSV', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="OSS" data-f="A" data-r="C" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Oreian Steelskin</td>
+                    <td><button class="numButt" onclick="add('OSS', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('OSS', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="OWW" data-f="A" data-r="L" data-t="C" data-s="1">
                     <td><img src="img/icons/faction/alloyin.png" /></td>
                     <td><img src="img/icons/rarity/new/legendary.png" /></td>
@@ -2958,6 +3230,14 @@
                     <td><button class="numButt" onclick="remove('PSG', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="PMI" data-f="T" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Primordial Invoker</td>
+                    <td><button class="numButt" onclick="add('PMI', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('PMI', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="PMS" data-f="T" data-r="C" data-t="S" data-s="1">
                     <td><img src="img/icons/faction/tempys.png" /></td>
                     <td><img src="img/icons/rarity/new/common.png" /></td>
@@ -3078,6 +3358,14 @@
                     <td><button class="numButt" onclick="remove('RFA', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="RWD" data-f="N" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Rot Wanderer</td>
+                    <td><button class="numButt" onclick="add('RWD', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('RWD', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="RSE" data-f="T" data-r="H" data-t="C" data-s="4">
                     <td><img src="img/icons/faction/tempys.png" /></td>
                     <td><img src="img/icons/rarity/new/heroic.png" /></td>
@@ -3190,6 +3478,14 @@
                     <td><button class="numButt" onclick="remove('SFS', 'N')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="SHY" data-f="N" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Scourge Hydra</td>
+                    <td><button class="numButt" onclick="add('SHY', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SHY', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="SCD" data-f="A" data-r="H" data-t="C" data-s="1">
                     <td><img src="img/icons/faction/alloyin.png" /></td>
                     <td><img src="img/icons/rarity/new/heroic.png" /></td>
@@ -3278,6 +3574,14 @@
                     <td><button class="numButt" onclick="remove('SCC', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="SPB" data-f="U" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Shardplate Behemoth</td>
+                    <td><button class="numButt" onclick="add('SPB', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SPB', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="SPD" data-f="U" data-r="R" data-t="C" data-s="1">
                     <td><img src="img/icons/faction/uterra.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -3302,6 +3606,14 @@
                     <td><button class="numButt" onclick="remove('STD', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="STB" data-f="T" data-r="C" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Shatterbolt</td>
+                    <td><button class="numButt" onclick="add('STB', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('STB', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="SHS" data-f="U" data-r="R" data-t="C" data-s="2">
                     <td><img src="img/icons/faction/uterra.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -3324,6 +3636,22 @@
                     <td>Skyknight Glider</td>
                     <td><button class="numButt" onclick="add('SKG', 'A')">+</button></td>
                     <td><button class="numButt" onclick="remove('SKG', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="SSD" data-f="T" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Smolderscale Dragon</td>
+                    <td><button class="numButt" onclick="add('SSD', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SSD', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="SDA" data-f="U" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Snowdrift Alpha</td>
+                    <td><button class="numButt" onclick="add('SDA', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SDA', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="SSR" data-f="U" data-r="L" data-t="C" data-s="2">
@@ -3446,6 +3774,14 @@
                     <td><button class="numButt" onclick="remove('SKS', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="SEL" data-f="T" data-r="R" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Sparkstone Elemental</td>
+                    <td><button class="numButt" onclick="add('SEL', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SEL', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="STM" data-f="T" data-r="R" data-t="C" data-s="4">
                     <td><img src="img/icons/faction/tempys.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -3526,6 +3862,14 @@
                     <td><button class="numButt" onclick="remove('SND', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="SNT" data-f="N" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Spiritstone Sentry</td>
+                    <td><button class="numButt" onclick="add('SNT', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SNT', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="STR" data-f="N" data-r="R" data-t="S" data-s="2">
                     <td><img src="img/icons/faction/nekrium.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -3598,12 +3942,28 @@
                     <td><button class="numButt" onclick="remove('SWR', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="SMN" data-f="T" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Steam Sentinel</td>
+                    <td><button class="numButt" onclick="add('SMN', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SMN', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="SER" data-f="A" data-r="C" data-t="C" data-s="4">
                     <td><img src="img/icons/faction/alloyin.png" /></td>
                     <td><img src="img/icons/rarity/new/common.png" /></td>
                     <td>Steeleye Researcher</td>
                     <td><button class="numButt" onclick="add('SER', 'A')">+</button></td>
                     <td><button class="numButt" onclick="remove('SER', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="SES" data-f="A" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Steeleye Seer</td>
+                    <td><button class="numButt" onclick="add('SES', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SES', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="SFA" data-f="A" data-r="H" data-t="C" data-s="1">
@@ -3652,6 +4012,14 @@
                     <td>Steelwelder Medic</td>
                     <td><button class="numButt" onclick="add('SWM', 'A')">+</button></td>
                     <td><button class="numButt" onclick="remove('SWM', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="SIV" data-f="U" data-r="H" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Stinging Invocation</td>
+                    <td><button class="numButt" onclick="add('SIV', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SIV', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="STN" data-f="T" data-r="R" data-t="S" data-s="2">
@@ -3740,6 +4108,14 @@
                     <td>Suruzal, Emissary of Varna</td>
                     <td><button class="numButt" onclick="add('SEV', 'N')">+</button></td>
                     <td><button class="numButt" onclick="remove('SEV', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="SMA" data-f="U" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Swampmoss Ancient</td>
+                    <td><button class="numButt" onclick="add('SMA', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('SMA', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="SML" data-f="U" data-r="C" data-t="C" data-s="1">
@@ -3894,6 +4270,46 @@
                     <td><button class="numButt" onclick="remove('TMG', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="TMM" data-f="U" data-r="C" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Toorgmai Mender</td>
+                    <td><button class="numButt" onclick="add('TMM', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('TMM', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="TRA" data-f="A" data-r="R" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Torrent Acolyte</td>
+                    <td><button class="numButt" onclick="add('TRA', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('TRA', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="TRS" data-f="U" data-r="R" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Torrent Soldier</td>
+                    <td><button class="numButt" onclick="add('TRS', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('TRS', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="TRV" data-f="T" data-r="R" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Torrent Valkyrie</td>
+                    <td><button class="numButt" onclick="add('TRV', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('TRV', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="TRW" data-f="N" data-r="R" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Torrent Witch</td>
+                    <td><button class="numButt" onclick="add('TRW', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('TRW', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="TBB" data-f="T" data-r="R" data-t="C" data-s="4">
                     <td><img src="img/icons/faction/tempys.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -3924,6 +4340,14 @@
                     <td>Tower Vanguard</td>
                     <td><button class="numButt" onclick="add('TVG', 'A')">+</button></td>
                     <td><button class="numButt" onclick="remove('TVG', 'A')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="TXB" data-f="U" data-r="R" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Toxic Boon</td>
+                    <td><button class="numButt" onclick="add('TXB', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('TXB', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="TXS" data-f="U" data-r="C" data-t="S" data-s="1">
@@ -4086,6 +4510,14 @@
                     <td><button class="numButt" onclick="remove('UIW', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="URS" data-f="U" data-r="C" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/uterra.png" /></td>
+                    <td><img src="img/icons/rarity/new/common.png" /></td>
+                    <td>Ursine Strength</td>
+                    <td><button class="numButt" onclick="add('URS', 'U')">+</button></td>
+                    <td><button class="numButt" onclick="remove('URS', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="UTM" data-f="U" data-r="C" data-t="C" data-s="2">
                     <td><img src="img/icons/faction/uterra.png" /></td>
                     <td><img src="img/icons/rarity/new/common.png" /></td>
@@ -4116,6 +4548,14 @@
                     <td>Uterra Packmaster</td>
                     <td><button class="numButt" onclick="add('UPM', 'U')">+</button></td>
                     <td><button class="numButt" onclick="remove('UPM', 'U')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="VIK" data-f="N" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Varna, Immortal King</td>
+                    <td><button class="numButt" onclick="add('VIK', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('VIK', 'N')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="VRP" data-f="N" data-r="L" data-t="S" data-s="2">
@@ -4206,6 +4646,14 @@
                     <td><button class="numButt" onclick="remove('VGR', 'U')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="VGL" data-f="N" data-r="R" data-t="S" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/rare.png" /></td>
+                    <td>Vigor Leech</td>
+                    <td><button class="numButt" onclick="add('VGL', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('VGL', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="VOB" data-f="T" data-r="R" data-t="S" data-s="4">
                     <td><img src="img/icons/faction/tempys.png" /></td>
                     <td><img src="img/icons/rarity/new/rare.png" /></td>
@@ -4252,6 +4700,14 @@
                     <td>Warbringer Uranti</td>
                     <td><button class="numButt" onclick="add('WBU', 'T')">+</button></td>
                     <td><button class="numButt" onclick="remove('WBU', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="WMC" data-f="A" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/alloyin.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>War Machine</td>
+                    <td><button class="numButt" onclick="add('WMC', 'A')">+</button></td>
+                    <td><button class="numButt" onclick="remove('WMC', 'A')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="WMR" data-f="A" data-r="H" data-t="C" data-s="2">
@@ -4358,6 +4814,14 @@
                     <td><button class="numButt" onclick="remove('WPD', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
+                <tr id="WSE" data-f="T" data-r="L" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/legendary.png" /></td>
+                    <td>Windspark Elemental</td>
+                    <td><button class="numButt" onclick="add('WSE', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('WSE', 'T')">-</button></td>
+                    <td>0</td>
+                </tr>
                 <tr id="WFB" data-f="N" data-r="C" data-t="C" data-s="1">
                     <td><img src="img/icons/faction/nekrium.png" /></td>
                     <td><img src="img/icons/rarity/new/common.png" /></td>
@@ -4380,6 +4844,14 @@
                     <td>Woebringer</td>
                     <td><button class="numButt" onclick="add('WBG', 'N')">+</button></td>
                     <td><button class="numButt" onclick="remove('WBG', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="ZXR" data-f="T" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/tempys.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Zarox, the Raging</td>
+                    <td><button class="numButt" onclick="add('ZXR', 'T')">+</button></td>
+                    <td><button class="numButt" onclick="remove('ZXR', 'T')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="XCR" data-f="N" data-r="C" data-t="C" data-s="2">
@@ -4428,6 +4900,14 @@
                     <td>Xithian Shambler</td>
                     <td><button class="numButt" onclick="add('XSH', 'N')">+</button></td>
                     <td><button class="numButt" onclick="remove('XSH', 'N')">-</button></td>
+                    <td>0</td>
+                </tr>
+                <tr id="XTR" data-f="N" data-r="H" data-t="C" data-s="5">
+                    <td><img src="img/icons/faction/nekrium.png" /></td>
+                    <td><img src="img/icons/rarity/new/heroic.png" /></td>
+                    <td>Xithian Tormentor</td>
+                    <td><button class="numButt" onclick="add('XTR', 'N')">+</button></td>
+                    <td><button class="numButt" onclick="remove('XTR', 'N')">-</button></td>
                     <td>0</td>
                 </tr>
                 <tr id="XDV" data-f="N" data-r="H" data-t="C" data-s="1">
@@ -4571,6 +5051,10 @@
                 <li class="filterItem">
                     <input class="filterCheck" type="checkbox" id="fS4" value="4" onchange="runFilter()" checked />
                     <label for="fS4">4</label>
+                </li>
+                <li class="filterItem">
+                    <input class="filterCheck" type="checkbox" id="fS5" value="5" onchange="runFilter()" checked />
+                    <label for="fS5">5</label>
                 </li>
             </ul>
 
