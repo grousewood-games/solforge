@@ -8,7 +8,7 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 
 ## Current Release
 
-### (Forge Guardian) Beta `v0.7.0`
+### (Forge Guardian) Beta `v0.7.1`
 
 - :flower_playing_cards: All cards in Sets 1 to 5 freely available.
 - :medal_military: Constructed and Draft modes.
