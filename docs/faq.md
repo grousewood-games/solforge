@@ -164,6 +164,10 @@ Regarding `Vaerus, Herald of Fury`, a creature receives the extra battle as one 
 
 `Brightsteel Gargoyle` does not change image when in defender mode. The amount of trickery to make this one card act fancy is currently in the "not worth it" pile.
 
+### Water Walker
+
+Changed the tribe to `Water Asir`. Because `Ice Asir` made no sense.
+
 ### Grimgaunt Doomrider
 
 The behavior of `Grimgaunt Doomrider` is slighlty different. A dying Doomrider will move to the lane where a friendly creature died. In the original game it would not, but would still apply the debuff in that lane. An example:

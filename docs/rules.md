@@ -214,6 +214,8 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 
 `Allied`: The keyword is followed by a faction. It is like Forge, but also requires a card of the listed faction is in your hand.
 
+`Ambush`: If a card with Ambush is in hand, and the conditions are met during an opponent's turn, the card will Spawn a creature.
+
 `Assault`: This ability will only happen if the creature was Forged into a lane with no opposing creature.
 
 `Banish`: A card that is Banished is removed from the game.
@@ -257,8 +259,6 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 `Empty/Available Lane`: A lane with no creature in it.
 
 ### Abilities in Future Sets
-
-`Ambush`: _introduced in Set 5_
 
 `Formation`: _introduced in Set 7_
 
@@ -380,7 +380,7 @@ The order creatures appeared on the board matters. On the same event, triggers o
 
 The order a creature gains triggers matters, primarily when a creature has two triggers that react to the same event. As an example, if `Spiritflame Mystic` has `Shallow Grave` casted on it and then dies later in the turn, will the resurrected Mystic get hit with the original Mystic's `Vengeance` effect? Triggers are also processed in a newest-first order, so in this case, yes. The Vengeance trigger was assigned at creature creation, the Shallow Grave trigger was assigned on a subsequent card play.
 
-Triggers on the player are resolved before triggers on creatures. Currently only `Epoch Soldier` is the only card that generates one of these, but more will arrive in Set 5.
+Triggers on the player are resolved before triggers on creatures. These include things like `Ambush` triggers and `Echoes` spells turn end triggers.
 
 Remember the three [batch piles](#normal-batches) triggers fall into will also influence the order in which things occur.
 
