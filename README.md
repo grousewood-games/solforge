@@ -8,9 +8,9 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 
 ## Current Release
 
-### (Forge Guardian) Beta `v0.7.3`
+### (Forge Guardian) Beta
 
-- :flower_playing_cards: All cards in Sets 1 to 5 freely available.
+- :flower_playing_cards: Sets 1 to 5 freely available. That's 567 cards.
 - :medal_military: Constructed and Draft modes.
 - :robot: Battle vs the somewhat improved AI.
 - :wrestling: Local head-to-head battle.
