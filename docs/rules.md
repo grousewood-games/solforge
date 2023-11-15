@@ -137,7 +137,7 @@ A player may do things in any order:
 - Play a card.
 - Battle.
 - Move an awake creature that has `Mobility`.
-- Use an `Activate` effect of an awake creature.
+- Use an awake creature's `Activate` ability.
 
 The Battle action is mandatory. All other choices are optional.
 
@@ -292,6 +292,7 @@ Necromancers, the undead, abominations, and slimy oozes.
 - Sacrificing creatures and benefiting from death in general
 - Creating token creatures on death
 - Resurrecting dead creatures
+- Side lane effects
 - Abomination synergies
 - Zombie synergies
 
@@ -318,7 +319,7 @@ Dinosaurs, druids, forest creatures, and very angry plants.
 - Boosting attack and health
 - Benefits from having all lanes occupied
 - Generating token creatures
-- Granting Breakthrough
+- Having and granting Breakthrough
 - Inflicting Poison
 - Healing the player, benefiting from the player gaining health
 - Plant synergies

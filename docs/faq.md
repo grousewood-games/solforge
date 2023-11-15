@@ -156,17 +156,29 @@ Rules around extra battles are slightly different. The new general rule is the f
 
 Regarding `Vaerus, Herald of Fury`, a creature receives the extra battle as one would expect (start of turn, Vaerus enters field, or new creature enters field). However, if Vaerus dies prior to the battle being used, the creature retains the extra battle.
 
-### Lyria
+### Ator, Thunder Titan
 
-`Lvl3 Lyria, Muse of Varna` now places creatures all at once, not in sequence. An example: if Lyria brought back four `Lvl1 Spring Dryads`, in the original game you would end up with a 4/4, 5/5, 6/6, and 7/7 set of Dryads. In this edition, you will end up with four 7/7 Dryads.
+I cannot find what the original behavior was, but `Ator, Thunder Titan` will not apply the `Assault` effect retroactively. Only creatures forged after Ator is on the field will receive his blessings.
 
 ### Brightsteel Gargoyle
 
 `Brightsteel Gargoyle` does not change image when in defender mode. The amount of trickery to make this one card act fancy is currently in the "not worth it" pile.
 
-### Water Walker
+### Darkforged
 
-Changed the tribe to `Water Asir`. Because `Ice Asir` made no sense.
+A number of Darkforged cards had original text claiming they trigger "when a friendly Darkforged enters play" or give benefits "for each friendly Darkforged". This would suggest the creature include themselves in their trigger, as other cards use the phrase "another friendly X" or "other friendly X".
+
+Given how overpowered the Darkforged are, I have added the term "another" or "other" to the following cards. I'm not sure how the cards actually behaved in the original client.
+
+- `Darkroot Shambler`
+- `Darkshard Witch`
+- `Darksteel Enforcer`
+- `Darkstone Asir`
+- `Dusk Hammer`
+- `Shadeclaw Zombie`
+- `Shadowmist Angel`
+- `Shroudthorn Splicer` 
+- `Umbraskin Yet`
 
 ### Grimgaunt Doomrider
 
@@ -181,9 +193,13 @@ The behavior of `Grimgaunt Doomrider` is slighlty different. A dying Doomrider w
 - In this version, the first Doomrider to trigger will move to the Core's lane and debuff the Invoker. The second Doomrider will trigger, see the lane as occupied, and do nothing. The Invoker is only debuffed once.
 - In both cases, the Doomriders die at the end of the batch.
 
-### Ator, Thunder Titan
+### Lyria
 
-I cannot find what the original behavior was, but `Ator, Thunder Titan` will not apply the `Assault` effect retroactively. Only creatures forged after Ator is on the field will receive his blessings.
+`Lvl3 Lyria, Muse of Varna` now places creatures all at once, not in sequence. An example: if Lyria brought back four `Lvl1 Spring Dryads`, in the original game you would end up with a 4/4, 5/5, 6/6, and 7/7 set of Dryads. In this edition, you will end up with four 7/7 Dryads.
+
+### Water Walker
+
+Changed the tribe to `Water Asir`. Because `Ice Asir` made no sense.
 
 ### Death and Triggers
 
@@ -209,8 +225,3 @@ I only captured a subset of information and assets back when the game was live. 
   - Various Tournaments (top X decks).
   - ZubjectX's Gimmick Decks (not on [YouTube](https://www.youtube.com/@ZubjectX/about) anymore).
   - Zan's Crazy Deck Shop (was on the original forums).
-- High quality images of certain card art from Set 7 (I have ok versions, the typical original size is 820x820 pixel).
-  - `Anvilbreaker`, `Automation Prime`, `Bulwark Battalion`, `G.S.F. Commando`, `Guardians Assemble`, `Ironbeard, Ascendant`, `Metadata Redactor`, `Ordinance Captain`, `Stasis Indexer`, `Steelspark Tinkerer`, `Tower Cannoneer`, `Voltaic Prophet`
-  - `Avarice, the Insatiable`, `Bride of Frankenbaum`, `Ceaseless Grimgaunt`, `Cercee's Call`, `Cyrus the Merciless`, `Disciple of Vyric`, `Ebonskull Diabolist`, `Indomitable Fiend`, `Lichmane Dragon`, `Murdurous Necromancer`, `Rite of Undeath`, `Scourge Knights`, `Undying Legacy`
-  - `Blazing Hostility`, `Blitzmane, the Destroyer`, `Cauldron Mystic`, `Chaos Twister`, `Cyclone Rider`, `Dragonkeeper Shaman`, `Fit of Rage`, `Iceshard Berserker`, `Lightning Tamer`, `Magmify`, `Ritual of Elements`, `Slumbering Shrine`, `Stampeding Mongosaur`, `Unstable Asir`, `Uranti Stormshaper`, `Warhound Courser`, `Warhound Raider`
-  - `Demara's Pitguard`, `Ether Wolves`, `Harbringer of Spring`, `Herd Mother`, `Living Hive`, `Lorus, the Unrivaled`, `Primeval Ancient`, `Relentless Wanderers`, `Shardplate Toxoid`, `Victory Rush`, `Wegu's Embrace`
