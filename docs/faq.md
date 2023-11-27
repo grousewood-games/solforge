@@ -197,6 +197,14 @@ The behavior of `Grimgaunt Doomrider` is slighlty different. A dying Doomrider w
 
 `Lvl3 Lyria, Muse of Varna` now places creatures all at once, not in sequence. An example: if Lyria brought back four `Lvl1 Spring Dryads`, in the original game you would end up with a 4/4, 5/5, 6/6, and 7/7 set of Dryads. In this edition, you will end up with four 7/7 Dryads.
 
+### Shardplate Behemoth
+
+The original game had a left-to-right rule precedence. From Ximane's advanced rules:
+
+> If a `Shardplate Behemoth` is to the left of an `Alloyin General`, its ability first makes its attack equal to its health, then the General's ability boosts its attack, which gives it 2 more attack than health. If the Behemoth is on the right of the General, the General boosts its attack, and then its attack is set to its health, effectively negating the General's ability.
+
+In this edition, Behemoth's card rule trumps all. The attack will always equal the health. However, if attack buffs are applied to the Behemoth, and then it has abilities removed (e.g., `Wipe Clean` is cast), the buff will remain. So if `Lysian Shard` is cast on a Behemoth, then it is wiped, the resulting dino will have 6 attack, not 0.
+
 ### Water Walker
 
 Changed the tribe to `Water Asir`. Because `Ice Asir` made no sense.
