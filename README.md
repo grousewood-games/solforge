@@ -10,7 +10,7 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 
 ### (Forge Guardian) Beta
 
-- :flower_playing_cards: Sets 1 to 6 freely available. That's 632 cards.
+- :flower_playing_cards: All the cards freely available. All 703 of 'em!
 - :medal_military: Constructed and Draft modes.
 - :robot: Battle vs the somewhat improved AI.
 - :wrestling: Local head-to-head battle.
@@ -24,9 +24,9 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 
 ### Data Footprint
 
-The core application (game logic, backgrounds, UI elements) will weigh in around 12mb. Each card level will draw around 70kb. If an enthusiastic player views every level of every card, the total download will be around 127mb.
+The core application (game logic, backgrounds, UI elements) will weigh in around 12mb. Each card level will draw around 70kb. If an enthusiastic player views every level of every card, the total download will be around 142mb.
 
-Turning off the `Big Cards` option will shave 7mb off the core app, and 88mb from all the cards (an average of 50kb per card level). You won't see the art in full glory, but it will be respectful to your data plan.
+Turning off the `Big Cards` option will shave 7mb off the core app, and 93mb from all the cards (an average of 50kb per card level). You won't see the art in full glory, but it will be respectful to your data plan.
 
 ## Parental Guide
 

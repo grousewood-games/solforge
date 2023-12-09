@@ -14,7 +14,7 @@ All game rules, card art, card names & text, dog bark battle sound, and the vast
 
 The fancy font, `Cinzel`, was created by [Natanael Gama](https://fonts.adobe.com/designers/natanael-gama).
 
-The orange scroller arrow icons were made by [Programmer16](https://opengameart.org/content/simple-orange-pixel-art-ui).
+The orange scroller arrow icons were made by [Programmer16](https://opengameart.org/content/simple-orange-pixel-art-ui). The green arrows were made by `AngryMeteor`.
 
 Square icons generated on [Game-Icons](https://game-icons.net).
 
@@ -106,10 +106,6 @@ Reports of incorrect text/stats on cards (or cards not doing what they are suppo
 
 You can. I make no promises that it will get get done, but no harm in asking.  Please review this FAQ and the [issue log](https://github.com/grousewood-games/solforge/issues) first as it may already be addressed. Give a 👍 reaction to existing entries you want. Otherwise feel free to [open a new discussion](https://github.com/grousewood-games/solforge/discussions), or message me about it if you don't have a Github account (see the [Contact](https://github.com/grousewood-games#contact) page).
 
-### Do You Plan To Add More Cards?
-
-Yes! Would like to get them all implemented. I'm currently focused on cards since they are more fun to code. UI and AI improvements will likely happen afterwards.
-
 ### You Call That A Deckbuilder?
 
 Yeah it's nasty. I just wanted something that would let people brew a deck. Making a proper builder with filters and such is going to take a minute.
@@ -138,6 +134,10 @@ Batch resolution is not randomized.
 When playing `Metasight`, `Perilous Insight`, or `Lvl3 Killion`, once a first card is selected for levelling, it is leveled. You cannot cancel back and re-pick as you can in most multi-select operations.
 
 Similarly, `Discordant Strike` and `Thunderstomp` will apply the first effect and cannot be undone. This is to avoid confusion that the selection was registered, as the same target can be chosen for the second effect.
+
+### Formation
+
+I'm unable to find anything stating how the rule works with authority, but the wording suggests a Formation can happen any time a creature enters the field. So it is not restricted to Forge scenarios. Cards that have interactive Formation abilities (`Scourge Knights`, `Voltaic Prophet`) will only trigger on their player's turn.
 
 ### Sudden Death
 
@@ -205,9 +205,15 @@ The original game had a left-to-right rule precedence. From Ximane's advanced ru
 
 In this edition, Behemoth's card rule trumps all. The attack will always equal the health. However, if attack buffs are applied to the Behemoth, and then it has abilities removed (e.g., `Wipe Clean` is cast), the buff will remain. So if `Lysian Shard` is cast on a Behemoth, then it is wiped, the resulting dino will have 6 attack, not 0.
 
-### Water Walker
+### Tribe Updates
 
-Changed the tribe to `Water Asir`. Because `Ice Asir` made no sense.
+Changed a few tribe types. Because I can.
+
+- `Ether Hounds`: `Spirit` became `Spirit Wolf` to align with Ether Wolf.
+- `Ether Wolf`: `Wolf` became `Spirit Wolf` to align with Ether Hounds.
+- `Living Hive`: `Elemental` became `Insect Elemental`. I'm still tempted to create a `Wax` type.
+- `Valifrax`: `Dragon` became `Fire Ice Dragon` to align with Iztek.
+- `Water Walker`:  `Ice Asir` became `Water Asir`. Card is not named Ice Walker.
 
 ### Death and Triggers
 
@@ -215,7 +221,17 @@ Rules regarding creatures who affect other creatures based on event triggers, bu
 
 The rules for `Dr. Frankenbaum` and `Yuru, the Necrosage` were documented. Their effects only apply if they were alive, or died at the same time, when the target creature died. The time here is the specific death time, not the death check at the end of a [batch](rules.md#advanced-event-timing).
 
-As such, the following cards are using the same principle: `Tarsus, Deathweaver`, `Uterradon Rex`, `Oreian Justicar`, `Sorrow Harvester`.
+As such, the following cards are using the same principle:
+
+- `Bride of Frankenbaum`
+- `Bulwark Battalion`
+- `Cauldron Mystic`
+- `Grimgaunt Betrayer`
+- `Grimgaunt Doomrider`
+- `Oreian Justicar`
+- `Sorrow Harvester`
+- `Tarsus, Deathweaver`
+- `Uterradon Rex`
 
 An example:
 - A player controls `Lvl1 Tarsus` and `Lvl1 Grove Matriarch`. Tarsus is opposing `Lvl1 Vengeful Spirit`, Matriarch is opposing `Lvl1 Swampmoss Lurker`.
@@ -233,3 +249,4 @@ I only captured a subset of information and assets back when the game was live. 
   - Various Tournaments (top X decks).
   - ZubjectX's Gimmick Decks (not on [YouTube](https://www.youtube.com/@ZubjectX/about) anymore).
   - Zan's Crazy Deck Shop (was on the original forums).
+  

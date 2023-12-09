@@ -164,7 +164,9 @@ The main board is known as the field. The field has five lanes with spaces for e
 
 When you play a creature, it will be sleeping, indicated by the solforge ring over the card. Sleeping creatures cannot attack, use `Activate` abilities or change lanes with `Mobility`. However they will fight back if another creature engages them in battle.
 
-During the battle, opposing creatures will deal damage to each other based on their attack values as long as at least one of the creatures is on the offensive. Two non-offensive creatures in the same lane will not fight. Creatures are destroyed when their health is at or below zero. If an attacking creature is unopposed, it will deal its damage on the opposing player.
+During the battle, opposing creatures will deal damage to each other based on their attack values as long as at least one of the creatures is on the offensive. Two non-offensive creatures in the same lane will not fight. Creatures are destroyed when their health is at or below zero.
+
+If an attacking creature is unopposed, it will deal its damage on the opposing player. Damage is unleashed left-to-right from the active player's perspective. This can have importance when considering player Armor and cards that react to player damage, like `Oratek Explosives`.
 
 A battle happens every turn.
 
@@ -224,6 +226,8 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 
 `Flank`: An ability that happens when the creature moves to a different lane, via Mobility or other effects.
 
+`Formation`: If the creature enters the field between two friendly creatures, this ability happens. Formation is checked at the moment it enters the field.
+
 `Gain Rank`: This ability will happen at the end of the players fourth turn in the current rank.
 
 `Heal`: In the context of healing a creature, and damage will be restored up to but not above that creatures maximum health. This is different from "gets +X health", which can raise the maximum health.
@@ -231,6 +235,8 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 `Negate`: The keyword is followed by an attribute. The target creature will lose that attribute, and cannot regain that attribute.
 
 `Overload`: When played, a card with Overload is not placed in the discard pile, but is removed from the game.
+
+`Raid`: The ability will occur at the friendly player's turn-end, only if at least three friendly creatures initiated battle that turn, and the creature with the Raid keyword is still alive. Creatures with Defender do not initiate battle.
 
 `Replace`: The target creature will be replaced with a new creature. The target is not considered to have died. Forging on top of an existing creature counts as a Replace.
 
@@ -257,12 +263,6 @@ Unless noted, these abilities are resolved in batches. See the [advanced event t
 `Side Lane`: Rightmost or leftmost lane on the field. Lane 1 & 5.
 
 `Empty/Available Lane`: A lane with no creature in it.
-
-### Abilities in Future Sets
-
-`Formation`: _introduced in Set 7_
-
-`Raid`: _introduced in Set 7_
 
 ## Factions
 
