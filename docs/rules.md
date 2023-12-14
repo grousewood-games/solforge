@@ -42,19 +42,19 @@ The primary goal of the game is to reduce your opponent's health to 0 (or below)
 
 ### Main Game
 
-Available choices will be highlighted in green rectangles, or be presented on the red button in the middle-right of the board. Left click your mouse over what your heart desires. A red rectangle indicates you can Cancel the current action.
+Available choices will be highlighted in blue or green, or be presented on the red button in the middle-right of the board. Left click your mouse over what your heart desires. A red highlight indicates you can Cancel the current action.
 
 Any card can be right clicked to [view the details](#card-details-view) -- the card text and all levels for the card.
 
-The player icons on the right indicate health levels, the current [rank](#end-of-turn), and the turn within the rank.
+The player icons on the right indicate health levels (blood drop), the current [rank](#end-of-turn) (purple orb), and the turn within the rank (green indicator on right that advances towards the rank count).
 
 The field consists of the 5x2 grid of squares. Your lanes are on the bottom, your opponents are on the top.
 
-Below the field are the cards in your hand. If you have more than five cards in hand, arrows will appear under your player to scroll the view.
+Below the field are the cards in your hand. If you have more than five cards in hand, arrows will appear under the enemy player to scroll the view. A gold coin will appear beside your hand as a visual cue that there are more cards.
 
-For creatures that have both an `Activate` and `Mobility` action available, clicking the creature will start the Mobility action, but the Activate choice will be presented on the main button (cancelling the Mobility request).
+For creatures that have both an `Activate` and `Mobility` action available, clicking the creature will start the Mobility action, but the Activate choice will be presented on the main button. Selecting the Activate button will cancel the Mobility request and start the Activate.
 
-When the AI is playing, none of the click actions will work (including right clicks to view card data and hand scroller arrows).
+When the AI is playing, none of the click actions will work (including right clicks to view card data and hand scroller arrows). Decision progress is displayed under the enemy player, a coin for each action. Coins turn gold as each analysis completes.
 
 ### Touch Screen Support
 

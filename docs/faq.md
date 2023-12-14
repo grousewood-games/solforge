@@ -10,21 +10,24 @@
 
 ## Credits
 
-All game rules, card art, card names & text, dog bark battle sound, and the vast majority of the UI art assets is the creation and intellectual property of [Stoneblade Entertainment](https://stoneblade.com/). I am greatful of their [permissiveness](https://www.reddit.com/r/SolForge/comments/134os4h/a_call_to_codersenthusiastsanybody_really/) in letting me share this free tribute to the original game.
+### Assets
 
-The fancy font, `Cinzel`, was created by [Natanael Gama](https://fonts.adobe.com/designers/natanael-gama).
+- All game rules, card art, card names & text, dog bark battle sound, and the vast majority of the UI art assets is the creation and intellectual property of [Stoneblade Entertainment](https://stoneblade.com/).
+- The fancy font, `Cinzel`, was created by [Natanael Gama](https://fonts.adobe.com/designers/natanael-gama).
+- The green arrows were made by `AngryMeteor`.
+- The rank orb is by [Cethiel](https://opengameart.org/content/orbs-collection)
+- Square icons generated on [Game-Icons](https://game-icons.net).
+- Enhanced versions of the large card frames are courtesty of [Spruce](https://reddit.com/user/SolSpruce/).
 
-The orange scroller arrow icons were made by [Programmer16](https://opengameart.org/content/simple-orange-pixel-art-ui). The green arrows were made by `AngryMeteor`.
+### Gratitude
 
-Square icons generated on [Game-Icons](https://game-icons.net).
+Very greatful to Stoneblade for their [permissiveness](https://www.reddit.com/r/SolForge/comments/134os4h/a_call_to_codersenthusiastsanybody_really/) in letting me share this tribute to the original game. They were certainly not obligated to.
 
-Enhanced versions of the large card frames are courtesty of [Spruce](https://reddit.com/user/SolSpruce/).
-
-A thank you to `Ximane` who wrote and published the "[Advanced Solforge Rules](https://solforge.fandom.com/wiki/Advanced_Rules)" back in the day. It has been an indispensable guide in my attempts to recreate the game as accurately as possible.
+A thank you to `Ximane` who wrote and published the "[Advanced Solforge Rules](https://antifandom.com/solforge/wiki/Advanced_Rules)" back in the day. It has been an indispensable guide in my attempts to recreate the game as accurately as possible.
 
 Much respect to [Kaelari](#will-you-implement-online-play) for his generous sharing of some original game assets.
 
-All coding done by me, your friendly neighbourhood grouse. Hat tip to the implementers of the [CanvasAPI](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), [Github](https://github.com) for the free hosting, and [Photopea](https://www.photopea.com/) for the image editing trickery.
+Hat tip to [Github](https://github.com) for the free hosting, and [Photopea](https://www.photopea.com/) for the image editing trickery.
 
 ### Did You Invent This Game?
 
@@ -204,6 +207,10 @@ The original game had a left-to-right rule precedence. From Ximane's advanced ru
 > If a `Shardplate Behemoth` is to the left of an `Alloyin General`, its ability first makes its attack equal to its health, then the General's ability boosts its attack, which gives it 2 more attack than health. If the Behemoth is on the right of the General, the General boosts its attack, and then its attack is set to its health, effectively negating the General's ability.
 
 In this edition, Behemoth's card rule trumps all. The attack will always equal the health. However, if attack buffs are applied to the Behemoth, and then it has abilities removed (e.g., `Wipe Clean` is cast), the buff will remain. So if `Lysian Shard` is cast on a Behemoth, then it is wiped, the resulting dino will have 6 attack, not 0.
+
+### Voltaic Prophet
+
+It is unclear how the Level 2 formation effect should work. It can discard the entire hand, leveling cards that can level. Or it can only discard cards capable of leveling. I attempted the second way and it felt weird in action. So the first approach is implemented -- the entire hand will discard. Be sure to forge this on your last play.
 
 ### Tribe Updates
 

@@ -4,14 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
         <script src="dist/solforge.js" type="module"></script>
         <title>Solforge - Mimicwurm Edition</title>
         <style>
@@ -21,7 +21,6 @@
             }
 
             body {
-                
                 margin: 0px 0px;
                 background-color: black;
             }
@@ -38,7 +37,7 @@
 
             #solforge {
                 flex-basis: auto;
-                touch-action: manipulation;           
+                touch-action: manipulation;
             }
 
             .gameSize100 {
@@ -89,7 +88,8 @@
                 list-style: none;
             }
 
-            canvas, img { 
+            canvas,
+            img {
                 position: absolute;
                 /* user-drag: none; */
                 user-select: none;
@@ -99,22 +99,36 @@
                 -ms-user-select: none;
                 touch-action: manipulation;
             }
-            #card { z-index: 8; }
-            #decklist { z-index: 7; }
-            #effects { z-index: 6; }
-            #hand { z-index: 5; }
-            #player { z-index: 4; }
-            #field { z-index: 3; }
-            #game-ui { z-index: 2; }
-            #playmat { z-index: 1; }
-
-
+            #card {
+                z-index: 8;
+            }
+            #decklist {
+                z-index: 7;
+            }
+            #hand {
+                z-index: 6;
+            }
+            #player {
+                z-index: 5;
+            }
+            #field {
+                z-index: 4;
+            }
+            #effects {
+                z-index: 3;
+            }
+            #game-ui {
+                z-index: 2;
+            }
+            #playmat {
+                z-index: 1;
+            }
 
             .green {
-                color:lime
+                color: lime;
             }
             .red {
-                color:crimson
+                color: crimson;
             }
             .all {
                 color: lightsteelblue;
@@ -131,7 +145,6 @@
             .debug {
                 color: gold;
             }
-
         </style>
     </head>
     <body>
@@ -141,18 +154,17 @@
                 <!-- For canvases, width and height represent the rendering surface size. CSS size changes will scale that surface -->
                 <canvas id="card" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="decklist" width="1024" height="768" class="uiSize100"></canvas>
-                <canvas id="effects" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="hand" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="player" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="field" width="1024" height="768" class="uiSize100"></canvas>
+                <canvas id="effects" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="game-ui" width="1024" height="768" class="uiSize100"></canvas>
-              
-                <img id="mainmenu" src="img/background/leash.jpg" class="uiSize100"></img>
-                <img id="blueface" src="img/background/blueface.jpg"  class="hide uiSize100"></img>
+
+                <img id="mainmenu" src="img/background/leash.jpg" class="uiSize100" />
+                <img id="blueface" src="img/background/blueface.jpg" class="hide uiSize100" />
             </div>
             <div id="log" class="logSize100">
-                <ul id="loglist">
-                </ul>
+                <ul id="loglist"></ul>
             </div>
         </div>
         <audio id="dogbark" src="sound/asthma-dog.mp3" volume="0.2"></audio>
