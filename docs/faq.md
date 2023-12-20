@@ -119,7 +119,7 @@ Certain mechanics found in the original game have been slightly changed for my o
 
 ### Card Versions
 
-The cards have been implemented in what's been dubbed "the wiki version". I believe this is the second-to-last rebalance before the game shuttered, and is what is reflected in the [Solforge Wiki](https://antifandom.com/solforge/wiki/Card_Sets).
+The cards have been implemented in what's been dubbed "the wiki version". I believe this is the second-to-last rebalance before the game shuttered, and is what is reflected in the [Solforge Wiki](https://antifandom.com/solforge/wiki/Card_Sets). This means some of the pre-con decks included with the game can be a bit off, as they were made with older card versions. The most notable breaking change is to cards that manipulate Defender, like `Statis Warden` and `Uranti Icemage`. `Stasis Indexer` is substituted when possible. 
 
 I don't even have the details of the final rebalance, but I suspect KaelForge has implemented those specs. Implementing earlier versions may be fun (especially for revisiting older metas), but is currently the lowest of priorities and considered more chore than useful.
 
