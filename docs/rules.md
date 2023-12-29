@@ -42,7 +42,7 @@ The primary goal of the game is to reduce your opponent's health to 0 (or below)
 
 ### Main Game
 
-Available choices will be highlighted in blue or green, or be presented on the red button in the middle-right of the board. Left click your mouse over what your heart desires. A red highlight indicates you can Cancel the current action.
+Available choices will be highlighted in blue (card plays, forges), green (mobility, activate) or yellow (card text actions), or be presented on the red button in the middle-right of the board. Left click your mouse over what your heart desires. A red highlight indicates you can Cancel the current action.
 
 Any card can be right clicked to [view the details](#card-details-view) -- the card text and all levels for the card.
 
@@ -58,7 +58,7 @@ When the AI is playing, none of the click actions will work (including right cli
 
 ### Touch Screen Support
 
-Tapping the ℹ️ icon in the lower right will switch to card details mode. Now any tap on a card will show the card details. To get back to the normal "action" mode, tap the 👆 icon in the lower right.
+Tapping the mouse icon in the lower right will switch between left-click and right-click mode. The current active button is highlighted on the icon.
 
 To temporarily view card details without changing modes, touch and hold a card for one second.
 
@@ -87,7 +87,7 @@ The initial screen provides options to configure the Constructed match.
 If either player selected the `Pre-Con` option, a screen will be presented to select the deck. The top left will indicate which player is currently picking.
 
 - The list on the left represents collections of decks. Clicking one will show individual decks on the right.
-- Clicking an individual deck will select that deck. There is currently no UI to inspect the deck contents, so enjoy the surprise.
+- Clicking an individual deck will select that deck. Click the eye icon to the left of a deck to preview the cards.
 
 ### Draft Screen
 
@@ -120,6 +120,8 @@ The following game modes are available to enhance your fun:
 - `Battle Bark`: Lets you turn on or off the battle sound.
 - `90% Size`: Will shrink the UI by 10%. Useful to make the app fit on tablets with `4:3` aspect ratio.
 - `Big Cards`: Shows larger card images when viewing the card details. Turning off will reduce the amount of data requested by the game. 
+
+You can also select a different game playmat here. The classic 5 are provided, but the game colour schemes tend to work best with the default `Uterra` background.
 
 ## Turn Structure
 

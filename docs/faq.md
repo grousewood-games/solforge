@@ -119,7 +119,7 @@ Certain mechanics found in the original game have been slightly changed for my o
 
 ### Card Versions
 
-The cards have been implemented in what's been dubbed "the wiki version". I believe this is the second-to-last rebalance before the game shuttered, and is what is reflected in the [Solforge Wiki](https://antifandom.com/solforge/wiki/Card_Sets). This means some of the pre-con decks included with the game can be a bit off, as they were made with older card versions. The most notable breaking change is to cards that manipulate Defender, like `Statis Warden` and `Uranti Icemage`. `Stasis Indexer` is substituted when possible. 
+The cards have been implemented in what's been dubbed "the wiki version". I believe this is the second-to-last rebalance before the game shuttered, and is what is reflected in the [Solforge Wiki](https://antifandom.com/solforge/wiki/Card_Sets). This means some of the pre-con decks included with the game can be a bit off, as they were made with older card versions. The most notable breaking change is to cards that manipulate Defender, like `Statis Warden` and `Uranti Icemage`. `Stasis Indexer` is substituted when possible. The other change is `Energy Surge` getting an overload on Level 3, meaning "infinite" decks will in fact be finite.
 
 I don't even have the details of the final rebalance, but I suspect KaelForge has implemented those specs. Implementing earlier versions may be fun (especially for revisiting older metas), but is currently the lowest of priorities and considered more chore than useful.
 
@@ -183,6 +183,10 @@ Given how overpowered the Darkforged are, I have added the term "another" or "ot
 - `Shroudthorn Splicer` 
 - `Umbraskin Yet`
 
+### Dozer, The Awakened
+
+If Dozer in his angry form is brought back through an effect (like Varna's Pact), it will have full health, not the adjusted starting health of its initial incarnation. I'm not sure how this worked in the original verison, but am not overhauling the graveyard mechanism for this one case. Resurrect your bears for fun and profit.
+
 ### Grimgaunt Doomrider
 
 The behavior of `Grimgaunt Doomrider` is slighlty different. A dying Doomrider will move to the lane where a friendly creature died. In the original game it would not, but would still apply the debuff in that lane. An example:
@@ -216,7 +220,7 @@ It is unclear how the Level 2 formation effect should work. It can discard the e
 
 Changed a few tribe types. Because I can.
 
-- `Ether Hounds`: `Spirit` became `Spirit Wolf` to align with Ether Wolf.
+- `Ether Hounds` and `Snowdrift Alpha`: `Spirit` became `Spirit Wolf` to align with Ether Wolf.
 - `Ether Wolf`: `Wolf` became `Spirit Wolf` to align with Ether Hounds.
 - `Living Hive`: `Elemental` became `Insect Elemental`. I'm still tempted to create a `Wax` type.
 - `Valifrax`: `Dragon` became `Fire Ice Dragon` to align with Iztek.
