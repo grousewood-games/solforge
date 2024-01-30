@@ -100,9 +100,12 @@
                 touch-action: manipulation;
             }
             #card {
-                z-index: 8;
+                z-index: 9;
             }
             #decklist {
+                z-index: 8;
+            }
+            #effects {
                 z-index: 7;
             }
             #hand {
@@ -114,7 +117,7 @@
             #field {
                 z-index: 4;
             }
-            #effects {
+            #hilite {
                 z-index: 3;
             }
             #game-ui {
@@ -154,10 +157,11 @@
                 <!-- For canvases, width and height represent the rendering surface size. CSS size changes will scale that surface -->
                 <canvas id="card" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="decklist" width="1024" height="768" class="uiSize100"></canvas>
+                <canvas id="effects" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="hand" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="player" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="field" width="1024" height="768" class="uiSize100"></canvas>
-                <canvas id="effects" width="1024" height="768" class="uiSize100"></canvas>
+                <canvas id="hilite" width="1024" height="768" class="uiSize100"></canvas>
                 <canvas id="game-ui" width="1024" height="768" class="uiSize100"></canvas>
 
                 <img id="mainmenu" src="img/background/leash.jpg" class="uiSize100" />

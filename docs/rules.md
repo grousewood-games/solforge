@@ -119,7 +119,8 @@ The following game modes are available to enhance your fun:
 - `Cheater`: If you play too good, the AI will cheat.
 - `Battle Bark`: Lets you turn on or off the battle sound.
 - `90% Size`: Will shrink the UI by 10%. Useful to make the app fit on tablets with `4:3` aspect ratio.
-- `Big Cards`: Shows larger card images when viewing the card details. Turning off will reduce the amount of data requested by the game. 
+- `Big Cards`: Shows larger card images when viewing the card details. Turning off will reduce the amount of data requested by the game.
+- `Animations`: Turning off will stop the animations. Things will run faster, it may be tricky to figure out what is happening.
 
 You can also select a different game playmat here. The classic 5 are provided, but the game colour schemes tend to work best with the default `Uterra` background.
 

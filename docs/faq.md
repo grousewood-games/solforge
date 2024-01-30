@@ -10,12 +10,13 @@
 
 ## Credits
 
-### Assets
+### Assets & Concepts
 
 - All game rules, card art, card names & text, dog bark battle sound, and the vast majority of the UI art assets is the creation and intellectual property of [Stoneblade Entertainment](https://stoneblade.com/).
 - The fancy font, `Cinzel`, was created by [Natanael Gama](https://fonts.adobe.com/designers/natanael-gama).
 - The green arrows were made by `AngryMeteor`.
-- The rank orb is by [Cethiel](https://opengameart.org/content/orbs-collection)
+- The rank orb and animations for card leveling, overload, battle damage, rankup are by [Cethiel](https://opengameart.org/users/cethiel).
+- The player damge animation is by [Sinestesia](https://opengameart.org/users/sinestesia).
 - Square icons generated on [Game-Icons](https://game-icons.net).
 - Enhanced versions of the large card frames are courtesty of [Spruce](https://reddit.com/user/SolSpruce/).
 
@@ -159,6 +160,14 @@ Rules around extra battles are slightly different. The new general rule is the f
 
 Regarding `Vaerus, Herald of Fury`, a creature receives the extra battle as one would expect (start of turn, Vaerus enters field, or new creature enters field). However, if Vaerus dies prior to the battle being used, the creature retains the extra battle.
 
+### Surviving Damage Effects
+
+`Alyssa, Strifeborn` and `Dozer, the Dormant` will not function perfectly when hit with a barrage of damage that lowers their health to zero. These scenarios are rare but possible. As an example, `Pyre Song` can deal cumulative damage from each creature. In theory, Alyssa should survive and boost off each hit, and Dozer should replace on the first damage. The trigger that reacts to the damage will not activate until the following batch, so if the health is below 1, the creature will be death-checked before that batch can begin.
+
+Other culprits can include arrangements of `Flamebreak Invokers`, `Cauldron Mystics`, `Ignurs`, or `Nug, Fury Fists`.
+
+`Dream Tree` works as expected since the effect does not influence the creature (so it's irrelevant if later damage killed it).
+
 ### Ator, Thunder Titan
 
 I cannot find what the original behavior was, but `Ator, Thunder Titan` will not apply the `Assault` effect retroactively. Only creatures forged after Ator is on the field will receive his blessings.
@@ -210,7 +219,7 @@ The original game had a left-to-right rule precedence. From Ximane's advanced ru
 
 > If a `Shardplate Behemoth` is to the left of an `Alloyin General`, its ability first makes its attack equal to its health, then the General's ability boosts its attack, which gives it 2 more attack than health. If the Behemoth is on the right of the General, the General boosts its attack, and then its attack is set to its health, effectively negating the General's ability.
 
-In this edition, Behemoth's card rule trumps all. The attack will always equal the health. However, if attack buffs are applied to the Behemoth, and then it has abilities removed (e.g., `Wipe Clean` is cast), the buff will remain. So if `Lysian Shard` is cast on a Behemoth, then it is wiped, the resulting dino will have 6 attack, not 0.
+In this edition, Behemoth's card rule trumps all. The attack will always equal the health. However, if permanent attack buffs are applied to the Behemoth, and then it has abilities removed (e.g., `Wipe Clean` is cast), the buff will remain. So if `Lysian Shard` is cast on a Behemoth, then it is wiped, the resulting dino will have 6 attack, not 0.
 
 ### Voltaic Prophet
 

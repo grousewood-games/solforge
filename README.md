@@ -16,17 +16,36 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 - :wrestling: Local head-to-head battle.
 - :clown_face: Fun bonus modes.
 - :crocodile: Unfriendly deckbuilder.
-- :desktop_computer: Best played on a desktop monitor with standard resolution (1080p non-retina) and a pointer device.
-- :iphone: Tablet / retina _works_ but has some issues at the moment.
-  - Tablet screen dimensions can be a poor fit for the layout.
-  - Touch controls to view card details are sub-par.
-  - Feel free to log issues with your bad experiences; I'm limited with what devices I can test on.
 
 ### Data Footprint
 
-The core application (game logic, backgrounds, UI elements) will weigh in around 12mb. Each card level will draw around 70kb. If an enthusiastic player views every level of every card, the total download will be around 142mb.
+The core application (game logic, backgrounds, UI elements) will weigh in around 16mb. Each card level will draw around 70kb. If an enthusiastic player views every level of every card, the total download will be around 146mb.
 
-Turning off the `Big Cards` option will shave 7mb off the core app, and 93mb from all the cards (an average of 50kb per card level). You won't see the art in full glory, but it will be respectful to your data plan.
+Turning off the `Big Cards` option will shave 7mb off the core app, and 93mb from all the cards (an average of 50kb per card level). You won't see the art in full glory, but it will be respectful to your data plan. Turning off the `Animations` option will save 3.5mb.
+
+## Supported Platforms
+
+Feel free to log issues with your bad experiences; I'm limited with what devices I can test on.
+
+### Browser
+
+The drawing engine now leverages the [OffscreenCanvas](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas) Web API. Browsers from before March 2023 may fail to run the app.
+
+For those who want older browser support, you can fork this repo and roll back to [v9.3.0](https://github.com/grousewood-games/solforge/tree/v0.9.3). But you'll be stuck with that version and the bugs / inefficiencies it has.
+
+### Desktop
+
+- Should work fine on a desktop monitor with standard resolution (1080p non-retina) and a pointer device.
+- Smaller screens may crop. 
+- 4K resolution is untested. I expect either the game takes up 1/4 of the screen, or everything is upscaled and looks fuzzy.
+- Screen refresh rates of 60hz (or multiples of 60) should animate at 60fps. Other rates (e.g. 75hz) are untested. I expect they should work but with mild animation stutter (e.g. every fourth screen paint will look the same as the one before it).
+
+### Mobile
+
+- Touch controls work, are not the best. Use the :computer_mouse: icon or long-presses to mimic right-clicks.
+- Certain screen sizes or aspect ratios may cut off parts of the game or the log.
+  - This may be improved in the future.
+- Phone screens are likely to be horrendously disappointing.
 
 ## Parental Guide
 
