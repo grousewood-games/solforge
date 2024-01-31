@@ -19,6 +19,7 @@
 - The player damge animation is by [Sinestesia](https://opengameart.org/users/sinestesia).
 - Square icons generated on [Game-Icons](https://game-icons.net).
 - Enhanced versions of the large card frames are courtesty of [Spruce](https://reddit.com/user/SolSpruce/).
+- `OffscreenCanvas` polyfill written by [Laurin Quast](https://gist.github.com/n1ru4l).
 
 ### Gratitude
 

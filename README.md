@@ -10,7 +10,7 @@ A homebrew attempt at recreating classic [Solforge](https://en.wikipedia.org/wik
 
 ### (Forge Guardian) Beta
 
-- :flower_playing_cards: All the cards freely available. All 703 of 'em!
+- :flower_playing_cards: Every card freely available. All 703 of 'em!
 - :medal_military: Constructed and Draft modes.
 - :robot: Battle vs the somewhat improved AI.
 - :wrestling: Local head-to-head battle.
@@ -29,9 +29,7 @@ Feel free to log issues with your bad experiences; I'm limited with what devices
 
 ### Browser
 
-The drawing engine now leverages the [OffscreenCanvas](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas) Web API. Browsers from before March 2023 may fail to run the app.
-
-For those who want older browser support, you can fork this repo and roll back to [v9.3.0](https://github.com/grousewood-games/solforge/tree/v0.9.3). But you'll be stuck with that version and the bugs / inefficiencies it has.
+The drawing engine now leverages the [OffscreenCanvas](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas) Web API. It has been polyfilled, but browsers from before March 2023 may fail to run the app.
 
 ### Desktop
 

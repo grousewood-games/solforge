@@ -12,6 +12,19 @@
         <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <script>
+            <!--OSC Polyfill-->
+            if (!window.OffscreenCanvas) {
+                window.OffscreenCanvas = class OffscreenCanvas {
+                    constructor(width, height) {
+                        this.canvas = document.createElement('canvas');
+                        this.canvas.width = width;
+                        this.canvas.height = height;
+                        return this.canvas;
+                    }
+                };
+            }
+        </script>
         <script src="dist/solforge.js" type="module"></script>
         <title>Solforge - Mimicwurm Edition</title>
         <style>
