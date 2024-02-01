@@ -31,6 +31,8 @@ Feel free to log issues with your bad experiences; I'm limited with what devices
 
 The drawing engine now leverages the [OffscreenCanvas](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas) Web API. It has been polyfilled, but browsers from before March 2023 may fail to run the app.
 
+MacOS Safari earlier than `v14.1` will likely not work. 
+
 ### Desktop
 
 - Should work fine on a desktop monitor with standard resolution (1080p non-retina) and a pointer device.
