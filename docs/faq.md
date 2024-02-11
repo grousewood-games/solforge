@@ -79,9 +79,7 @@ Perhaps when I am "finished". Right now only the minified build will be public, 
 
 ### Will You Implement Online Play?
 
-Unlikely. Originally I focused on single player as I did not have permission to make this public (July 2022). When it was revealed that this type of thing would be allowed (April 2023), it became an option. I had some hesitation due to the effort level and the likely scenario that [nobody would play it for long](https://www.reddit.com/r/SolForge/comments/tiv839/what_would_it_take_to_get_you_to_play/). Shortly after (May 2023), Kaelari announced he was ressurecting his own effort. He is the people's champion of Solforge (a title well earned through colossal efforts over years; I enjoyed many a tourny on `solforgeladder.com`), and his server kung-fu is better than mine. Competing with him seems a questionable time investment; there are a number of other projects I'm itching to get to.
-
-Here is a post containing links to play the current version of [KaelForge](https://www.reddit.com/r/SolForge/comments/13uukrm/kaelforge_set_1_and_15_done_you_can_play_solforge/).
+Unlikely. Originally I focused on single player as I did not have permission to make this public (July 2022). When it was revealed that this type of thing would be allowed (April 2023), it became an option. I had some hesitation due to the effort level and the likely scenario that [nobody would play it for long](https://www.reddit.com/r/SolForge/comments/tiv839/what_would_it_take_to_get_you_to_play/). Shortly after (May 2023), Kaelari announced he was ressurecting his own effort, now named [KaelForge](#what-is-kaelforge). He is the people's champion of Solforge (a title well earned through colossal efforts over years; I enjoyed many a tourny on `solforgeladder.com`), and his server kung-fu is better than mine. Competing with him seems a questionable time investment; there are a number of other projects I'm itching to get to.
 
 ### Does This Work On A Touchscreen Tablet?
 
@@ -114,6 +112,15 @@ You can. I make no promises that it will get get done, but no harm in asking.  P
 ### You Call That A Deckbuilder?
 
 Yeah it's nasty. I just wanted something that would let people brew a deck. Making a proper builder with filters and such is going to take a minute.
+
+### What is KaelForge?
+
+KaelForge is the other free fan-made implementation of the original Solforge. Written in Unity, it has a server component that enables online matches against other real-life players. There are other benefits, including having an account with saved deck lists, a proper draft pool algo and tourney system, and the choice to run a dedicated app instead of a browser app.
+
+- Sets 1 to 3 (as of January 2024).
+- Implements the "final" version of cards, so a slightly different experience than Mimicwurm.
+- [Play right now](https://kaelari.tech/KF) in a browser. Mobile browsers are not supported.
+- Join the [Discord Server](https://discord.gg/gnmGj9R) to chat, find opponents, and find links to the latest Windows download.
 
 ## Game Differences
 

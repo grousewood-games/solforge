@@ -1,8 +1,18 @@
 # Rules
 
-A good chunk of this was influenced (or outright lifted) from the [Solforge Wiki](https://antifandom.com/solforge/wiki/How_to_Play), primarily written by [Vandergus](https://vandergusdrafting.tumblr.com/), [Djurre](https://www.reddit.com/user/Djurre1980/), and [RavenBlackFeather](https://solforge.fandom.com/wiki/User:RavenBlackFeather). There was a second document I had in my possession giving an overview of game mechanics, which I'm also sourcing from. I have no idea who wrote it, googling quotes has been hitless. If you think it's you, let me know, happy to credit.
+A good chunk of this was influenced (or outright lifted) from the [Solforge Wiki](https://antifandom.com/solforge/wiki/How_to_Play), primarily written by [Vandergus](https://vandergusdrafting.tumblr.com/), [Djurre](https://www.reddit.com/user/Djurre1980/), and [RavenBlackFeather](https://solforge.fandom.com/wiki/User:RavenBlackFeather). I'm also pulling content from *N3Rk's Guide to Keywords and Mechanics*, originally found on the now-defunct `Ghox's Socks` website.
 
-Given the current state of the UI, if you never played the original game, watching some short [tutorials on Youtube](https://www.youtube.com/watch?v=i9YqvljwxIQ) may go a long way to having a confusion free first experience.
+### First Time Players
+
+Given the current state of the UI, if you never played the original game, watching some short [tutorials on Youtube](https://www.youtube.com/watch?v=i9YqvljwxIQ) may go a long way to having a confusion free first experience. `Dehboy` also has a great [written introduction](https://solforgedecktech.wordpress.com/2013/08/30/in-depth-beginners-guide-to-everything-solforge/) to the game.
+
+If you're the type who wants to play instead of reading rules, I suggest the following for a first play:
+
+1. Select the Constructed play option (`Constr'd`).
+2. Keep the default settings (`Dumb Bot`, and `Pre-Con` for both players), and select `Next`.
+3. For both players, select the first group `Starters & Early Tournies`, and pick one of the four `Starter` decks.
+
+For an easier opponent, on Step 2 go into the `Advanced Options` and select the `Wurm` level bot brain.
 
 ## Contents
 
@@ -79,9 +89,10 @@ The initial screen provides options to configure the Constructed match.
   - `Human` will allow the user play both turns. Great for parties.
 - The Player options determine what deck will be used in the game for each side.
   - `Pre-Con` will allow you to choose a pre-made deck (selected in another screen).
-  - `Random` will choose a random pre-constructed deck.
+  - `Random` will choose a random pre-constructed deck. This can be fine-tuned in the Advanced menu.
   - `Scramble` will pick a deck of 30 unique cards. A true dogs breakfast!
   - `Load File` will let you load a deck file you created in the deck builder.
+- See the [Advanced](#advanced-options) section for details on that submenu.
 - The `Next` button will accept the choices and continue.
 
 If either player selected the `Pre-Con` option, a screen will be presented to select the deck. The top left will indicate which player is currently picking.
@@ -102,6 +113,7 @@ The initial screen provides options to configure the Draft match.
   - `Legendary` means first pack in the draft contains six Legendary cards.
   - `Overdraft` has both players select 60 cards for enhanced stupidity.
 - The Sets selector will restrict which card sets are included in the draft.
+- See the [Advanced](#advanced-options) section for details on that submenu.
 - The `Next` button will accept the choices and continue.
 
 Each human player will then draft cards in the drafting screen. The top left will indicate which player is currently picking.
@@ -113,7 +125,7 @@ The game will start after 30 cards have been picked.
 
 ### Extras Screen
 
-The following game modes are available to enhance your fun:
+Accessed via the main menu, the following game modes are available to enhance your fun:
 
 - `Big Health`: Players have a higher starting health, allowing time for stupider combos to happen.
 - `Cheater`: If you play too good, the AI will cheat.
@@ -123,6 +135,30 @@ The following game modes are available to enhance your fun:
 - `Animations`: Turning off will stop the animations. Things will run faster, it may be tricky to figure out what is happening.
 
 You can also select a different game playmat here. The classic 5 are provided, but the game colour schemes tend to work best with the default `Uterra` background.
+
+### Advanced Options
+
+This submenu will let you do deeper tweaks to the game.
+
+- `Bot Brains` adjusts the decision-making tolerance of the AI opponent.
+  - `Metamind` will always pick the choices it deems best. In theory this should provide the greatest challenge. Gameplay may feel repetative as it will tend to favour the same picks.
+  - `Savant` will select from the upper-tier choices. Moves will generally be sensible, with some variety mixed in.
+  - `Wurm` is more "open to experiences" in making selections. It will still make reasonable picks, but can open up plays with less-popular cards.
+- `Bot Priorities` will adjust how the AI calculates the value of each action. Higher levels will give that metric more priority. Adjusting these settings for a specific deck strategy can help the bot put up a better fight.
+  - `Minions` will prefer having a creature present in a lane, regardless of its quality.
+  - `Potency` will favour creatures of higher quality. This includes health, attack, effects like armor and regenerate, and the ability to impact itself or other creatures.
+  - `Menace` will value a creature's potential to inflict damage. Primarily attack and breakthrough.
+  - `Life Gain` will focus on increasing the player's life and defending against player damage.
+  - `Life Drain` will relish in reducing the opponent player's life total.
+  - `Deck` will respect improving the quality of cards in your deck for better future draws.
+  - `Hand` will attempt to draw more cards into the players hand.
+  - Minons, Potency, and Menace are symmetrical measures. For example, a high Minions setting will also result in the bot wanting to reduce your creature count as well as increase its own.
+- `Random Filter` allows you to limit the qualifying decks selected in Random mode. This only appears when setting up a Constructed game.
+  - `Good` categories are competative decks who's dominant cards are from the sets listed. In general, later sets have more powerful cards.
+  - `Average` decks are functional but are often at a disadvantage against Good decks.
+  - `Jank` decks typically work on a gimmick or theme. Full of fun times but typically can't keep pace with stronger decks. Note that Infinity decks are in this category; once Energy Surge got Overload on L3, they are no longer infinite.
+  - `Official` decks were from the original app and used to showcase new cards. They are cohesive but not top-tier.
+- `Reset All` will appear if changes have been made. Clicking it will set everything back to the Mimicwurm default settings.  
 
 ## Turn Structure
 
@@ -409,3 +445,4 @@ Re-arrange the reaction list into three categories
 
 Process the trigger reactions in order
 ```
+
