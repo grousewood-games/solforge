@@ -36,16 +36,14 @@ MacOS Safari earlier than `v14.1` will likely not work.
 ### Desktop
 
 - Should work fine on a desktop monitor with standard resolution (1080p non-retina) and a pointer device.
-- Smaller screens may crop. 
+- Smaller screens should shrink to fit but images may look grainy. 
 - 4K resolution is untested. I expect either the game takes up 1/4 of the screen, or everything is upscaled and looks fuzzy.
 - Screen refresh rates of 60hz (or multiples of 60) should animate at 60fps. Other rates (e.g. 75hz) are untested. I expect they should work but with mild animation stutter (e.g. every fourth screen paint will look the same as the one before it).
 
 ### Mobile
 
 - Touch controls work, are not the best. Use the :computer_mouse: icon or long-presses to mimic right-clicks.
-- Certain screen sizes or aspect ratios may cut off parts of the game or the log.
-  - This may be improved in the future.
-- Phone screens are likely to be horrendously disappointing.
+- Certain screen sizes or aspect ratios may have an inferior playing experience.
 
 ## Parental Guide
 

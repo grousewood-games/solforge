@@ -127,12 +127,16 @@ The game will start after 30 cards have been picked.
 
 Accessed via the main menu, the following game modes are available to enhance your fun:
 
+- `Log`: Lets you choose how the game log is displayed.
+  - `Auto`: Adjusts to the best choice based on your screen size.
+  - `Right`: The log will always be to the right of the game board.
+  - `Below`: The log will always be below the game board.
+  - `Menu`: The log is accessible via the menu button in the upper-left of the game board. In this mode, the log will automatically close if a deck view or card detail view is opened.
+- `Big Cards`: Shows larger card images when viewing the card details. Turning off will reduce the amount of data requested by the game.
+- `Animations`: Turning off will stop the animations. Things will run faster, it may be tricky to figure out what is happening.
 - `Big Health`: Players have a higher starting health, allowing time for stupider combos to happen.
 - `Cheater`: If you play too good, the AI will cheat.
 - `Battle Bark`: Lets you turn on or off the battle sound.
-- `90% Size`: Will shrink the UI by 10%. Useful to make the app fit on tablets with `4:3` aspect ratio.
-- `Big Cards`: Shows larger card images when viewing the card details. Turning off will reduce the amount of data requested by the game.
-- `Animations`: Turning off will stop the animations. Things will run faster, it may be tricky to figure out what is happening.
 
 You can also select a different game playmat here. The classic 5 are provided, but the game colour schemes tend to work best with the default `Uterra` background.
 

@@ -53,43 +53,15 @@
                 touch-action: manipulation;
             }
 
-            .gameSize100 {
-                width: 1024px;
-                height: 768px;
-                min-width: 1024px;
-            }
-
-            .gameSize90 {
-                width: 928px;
-                height: 696px;
-                min-width: 928px;
-            }
-
             #log {
+                background-color: black;
                 border: 1px blue;
                 flex-grow: 1;
                 color: azure;
                 overflow-y: scroll;
                 font-family: 'cinzel';
                 font-size: larger;
-            }
-
-            .logSize100 {
-                height: 768px;
-            }
-
-            .logSize90 {
-                height: 696px;
-            }
-
-            .uiSize100 {
-                width: 1024px;
-                height: 768px;
-            }
-
-            .uiSize90 {
-                width: 928px;
-                height: 696px;
+                z-index: 20;
             }
 
             ul {
@@ -112,6 +84,7 @@
                 -ms-user-select: none;
                 touch-action: manipulation;
             }
+            /* Z-index of log needs to always be higher */
             #card {
                 z-index: 9;
             }
@@ -165,22 +138,22 @@
     </head>
     <body>
         <div id="flex">
-            <div id="solforge" class="gameSize100">
+            <div id="solforge">
                 <!-- See z-index css above for ordering -->
                 <!-- For canvases, width and height represent the rendering surface size. CSS size changes will scale that surface -->
-                <canvas id="card" width="1024" height="768" class="uiSize100"></canvas>
-                <canvas id="decklist" width="1024" height="768" class="uiSize100"></canvas>
-                <canvas id="effects" width="1024" height="768" class="uiSize100"></canvas>
-                <canvas id="hand" width="1024" height="768" class="uiSize100"></canvas>
-                <canvas id="player" width="1024" height="768" class="uiSize100"></canvas>
-                <canvas id="field" width="1024" height="768" class="uiSize100"></canvas>
-                <canvas id="hilite" width="1024" height="768" class="uiSize100"></canvas>
-                <canvas id="game-ui" width="1024" height="768" class="uiSize100"></canvas>
+                <canvas id="card" width="1024" height="768"></canvas>
+                <canvas id="decklist" width="1024" height="768"></canvas>
+                <canvas id="effects" width="1024" height="768"></canvas>
+                <canvas id="hand" width="1024" height="768"></canvas>
+                <canvas id="player" width="1024" height="768"></canvas>
+                <canvas id="field" width="1024" height="768"></canvas>
+                <canvas id="hilite" width="1024" height="768"></canvas>
+                <canvas id="game-ui" width="1024" height="768"></canvas>
 
-                <img id="mainmenu" src="img/background/dragon.jpg" class="uiSize100" />
-                <img id="blueface" src="img/background/blueface.jpg" class="hide uiSize100" />
+                <img id="mainmenu" src="img/background/dragon.jpg" />
+                <img id="blueface" src="img/background/blueface.jpg" class="hide" />
             </div>
-            <div id="log" class="logSize100">
+            <div id="log">
                 <ul id="loglist"></ul>
             </div>
         </div>
